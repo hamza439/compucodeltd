@@ -52,7 +52,7 @@ function App() {
           <Route path="/solutions/hybrid-migration" element={<ComprehensiveDataMigration/>} />
           <Route path="/solutions/infrastructure-virtualisation" element={<InfrastructureVirtualisation/>} />
           <Route path="/solutions/vmware-virtualization" element={<VmwareVirtualization/>} />
-          <Route path="/solutions/eDiscovery-Compliancearchiving" element={<EDiscoveryComplianceArchiving/>} />
+          <Route path="/solutions/eDiscovery-Compliancearchiving" element={<eDiscoveryComplianceArcheiving/>} />
           <Route path="/solutions/enterprise-archive" element={<Enterprisearcheive/>} />
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/cookie-policy" element={<CookiePolicy/>} />
