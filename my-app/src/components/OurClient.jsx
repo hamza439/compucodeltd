@@ -99,9 +99,7 @@ const clients = [
   { name: "Lekki FreeZone",     href: "http://lekkizone.com.ng/",          src: "https://compucodeltd.com/images/new-partners/lekki.png" },
   { name: "Keystone Bank",      href: "https://www.keystonebankng.com/",   src: "https://compucodeltd.com/images/new-partners/keystone.png" },
   { name: "Zenith Bank",        href: "https://www.zenithbank.com/",       src: "https://compucodeltd.com/images/new-partners/zenith.png" },
-  { name: "First Bank",         href: "https://www.firstbanknigeria.com/", src: firstbankLogo },
   { name: "Fidelity Bank",      href: "https://www.fidelitybank.ng/",      src: fidelityLogo },
-  { name: "FAAN",               href: "https://www.faannigeria.org/",      src: faanLogo },
   { name: "MTN",                href: "https://www.mtn.com.ng/",           src: mtnLogo },
 ];
 
@@ -158,7 +156,7 @@ export default function OurClient() {
                 target="_blank"
                 rel="noopener noreferrer"
                 // className="flex-shrink-0 brightness-50   opacity-30 hover:opacity-100 transition-opacity duration-300"
-                className="flex-shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                className="flex-shrink-0 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               >
                 <img
                   src={src}

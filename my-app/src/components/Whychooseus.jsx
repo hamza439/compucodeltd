@@ -239,24 +239,14 @@ const cards = [
     title: "Infrastructure Virtualisation",
     text: "Virtual infrastructure solutions that consolidate physical hardware into flexible, scalable virtual environments — reducing cost and complexity.",
   },
-  {
-    emoji: "⚙️",
-    bg: "bg-emerald-500",
-    title: "VMware Virtualization",
-    text: "End-to-end VMware virtualization solutions — from initial deployment and configuration to ongoing management and performance optimisation.",
-  },
+ 
   {
     emoji: "💬",
     bg: "bg-green-500",
-    title: "Message / Email Solution",
+    title: " eDiscovery &amp; Compliance Archiving",
     text: "Enterprise messaging and email platforms powered by AI — unifying SMS, email, and notifications with automated routing and response workflows.",
   },
-  {
-    emoji: "🗃️",
-    bg: "bg-rose-500",
-    title: "Enterprise Archive",
-    text: "Comprehensive enterprise archiving for email, files, and records — fully compliant, instantly searchable, and built for long-term retention.",
-  },
+
 ];
 
 export default function WhyChooseUs() {
@@ -266,12 +256,9 @@ export default function WhyChooseUs() {
 
         {/* ── Section header ── */}
         <div className="text-center mb-10 sm:mb-14">
-          <p className="text-[10px] sm:text-xs tracking-widest uppercase text-gray-400 dm-sans-regular-400 mb-2 sm:mb-3">
-            Our Solutions
-          </p>
+          
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl sora-semibold-600 text-gray-900 leading-tight">
-            Why Choose{" "}
-            <span style={{ color: "#e53e2d" }}>Compucode</span>?
+          Our Solutions{" "}
           </h2>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base dm-sans-regular-400 text-gray-500 max-w-2xl mx-auto leading-relaxed">
             From AI-powered automation to enterprise infrastructure — every

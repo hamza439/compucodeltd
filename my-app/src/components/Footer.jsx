@@ -583,7 +583,7 @@ const Footer = () => {
 
         {/* ── Copyright ── */}
         <p className="text-sm text-gray-500 mt-5 mb-3">
-          © 2025 All rights reserved
+          © 2026 All rights reserved
         </p>
 
         {/* ── Legal Text ── */}

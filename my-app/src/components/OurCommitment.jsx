@@ -284,17 +284,9 @@ export default function ComplianceSection() {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 sm:gap-4">
             <h2 className="text-xl sm:text-3xl font-extrabold leading-tight text-gray-900">
               Our Commitment to{" "}
-              <span className="text-[#1b3f6e]">Data Security &amp; Compliance</span>
+              <span className="text-[#e53e2d]">Data Security &amp; Compliance</span>
             </h2>
-            <a
-              href="#"
-              className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-gray-700 border border-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded hover:bg-gray-50 transition w-fit"
-            >
-              View All
-              <svg width="14" height="10" fill="none" viewBox="0 0 17 12">
-                <path fill="currentColor" d="M13.809 5.222 9.058 1.1l1.108-1.1 6.041 6-6.04 6-1.11-1.102 4.752-4.12H.207V5.222h13.602Z" />
-              </svg>
-            </a>
+          
           </div>
         </div>
 
