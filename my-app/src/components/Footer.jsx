@@ -565,7 +565,7 @@ const Footer = () => {
               { href: "https://www.linkedin.com/company/compucode", icon: <FaLinkedinIn size={15} />, label: "LinkedIn" },
               { href: "https://www.facebook.com/", icon: <FaFacebookF size={14} />, label: "Facebook" },
               { href: "https://twitter.com/CompucodeL", icon: <FaXTwitter size={14} />, label: "Twitter" },
-              { href: "https://chat.whatsapp.com/HN3BQ95oLIEF1HBZfkRBJ1", icon: <FaWhatsapp size={16} />, label: "WhatsApp" },
+              { href: "https://wa.me/", icon: <FaWhatsapp size={16} />, label: "WhatsApp" },
             ].map(({ href, icon, label }) => (
               <a
                 key={label}
