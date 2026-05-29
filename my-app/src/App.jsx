@@ -22,7 +22,7 @@ import CookiePolicy from './pages/CookiePolicy.jsx';
 import VmwareVirtualization from './pages/VmwareVirtualization.jsx';
 // import MessageEmailSolution from './pages/eDiscoveryComplianceArchiving.jsx'
 import Enterprisearcheive from './pages/Enterprisearcheive.jsx';
-import EDiscoveryComplianceArchiving from './pages/EDiscoveryComplianceArchiving.jsx';
+import eDiscoveryComplianceArcheiving from './pages/eDiscoveryComplianceArchiving.jsx';
 
 
 
