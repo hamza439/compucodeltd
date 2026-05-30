@@ -22,7 +22,7 @@ import CookiePolicy from './pages/CookiePolicy.jsx';
 import VmwareVirtualization from './pages/VmwareVirtualization.jsx';
 // import MessageEmailSolution from './pages/eDiscoveryComplianceArchiving.jsx'
 import Enterprisearcheive from './pages/Enterprisearcheive.jsx';
-import eDiscoveryComplianceArcheiving from './pages/eDiscoveryComplianceArchiving.jsx';
+import EDiscoveryComplianceArchiving from './pages/EDiscoveryComplianceArchiving';
 
 
 
@@ -45,16 +45,18 @@ function App() {
           path="/solutions/data-security-migration-integration"
           element={<DataSecurity />}
         /> */}
-          <Route path="/solutions/data-analytics" element={<DataAnalytics/>} />
-          <Route path="/solutions/business-continuity" element={<BusinessContinuity/>} />
-          <Route path="/solutions/datacenter-transformation" element={<DataCenterTransformation/>} />
-          <Route path="/solutions/cloud-services" element={<CloudServices/>} />
-          <Route path="/solutions/hybrid-migration" element={<ComprehensiveDataMigration/>} />
-          <Route path="/solutions/infrastructure-virtualisation" element={<InfrastructureVirtualisation/>} />
-          <Route path="/solutions/vmware-virtualization" element={<VmwareVirtualization/>} />
-          <Route path="/solutions/eDiscovery-Compliancearchiving" element={<eDiscoveryComplianceArcheiving/>} />
-          <Route path="/solutions/enterprise-archive" element={<Enterprisearcheive/>} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+         <Route path="/solutions/data-analytics" element={<DataAnalytics/>} />
+         <Route path="/solutions/business-continuity" element={<BusinessContinuity/>} />
+         <Route path="/solutions/datacenter-transformation" element={<DataCenterTransformation/>} />
+        <Route path="/solutions/cloud-services" element={<CloudServices/>} />
+        <Route path="/solutions/hybrid-migration" element={<ComprehensiveDataMigration/>} />
+        <Route path="/solutions/infrastructure-virtualisation" element={<InfrastructureVirtualisation/>} />
+         <Route path="/solutions/vmware-virtualization" element={<VmwareVirtualization/>} />
+    <Route path="/solutions/eDiscovery-Compliancearchiving" element={<EDiscoveryComplianceArchiving/>} />
+                    <Route path="/solutions/enterprise-archive" element={<Enterprisearcheive/>} />
+
+          
+           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/cookie-policy" element={<CookiePolicy/>} />
 
 

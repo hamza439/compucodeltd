@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
-import Unlocking from '../components/Unlocking'
+// import Unlocking from '../components/Unlocking'
 import OurClient from '../components/OurClient'
 import PartnerSection from '../components/PartnerSection'
 import Datamaskingsection from '../components/Datamaskingsection'
@@ -12,12 +12,12 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <Unlocking/>
-      <OurClient/>
-      <Whychooseus/>
-      <PartnerSection/>
-      <Datamaskingsection/>
+      {/* <Unlocking/> */}
       <OurCommitment/>
+      <Whychooseus/>
+      <Datamaskingsection/>
+       <OurClient/>
+      <PartnerSection/>
       <Footer/>
     </>
   )
