@@ -22,7 +22,7 @@ import CookiePolicy from './pages/CookiePolicy.jsx';
 import VmwareVirtualization from './pages/VmwareVirtualization.jsx';
 // import MessageEmailSolution from './pages/eDiscoveryComplianceArchiving.jsx'
 import Enterprisearcheive from './pages/Enterprisearcheive.jsx';
-import EDiscoveryComplianceArchiving from './pages/EDiscoveryComplianceArchiving';
+import eDiscoveryComplianceArcheiving from './pages/eDiscoveryComplianceArchiving.jsx';
 
 
 
@@ -52,7 +52,7 @@ function App() {
         <Route path="/solutions/hybrid-migration" element={<ComprehensiveDataMigration/>} />
         <Route path="/solutions/infrastructure-virtualisation" element={<InfrastructureVirtualisation/>} />
          <Route path="/solutions/vmware-virtualization" element={<VmwareVirtualization/>} />
-    <Route path="/solutions/eDiscovery-Compliancearchiving" element={<EDiscoveryComplianceArchiving/>} />
+    <Route path="/solutions/eDiscovery-Compliancearchiving" element={<eDiscoveryComplianceArcheiving/>} />
                     <Route path="/solutions/enterprise-archive" element={<Enterprisearcheive/>} />
 
           
