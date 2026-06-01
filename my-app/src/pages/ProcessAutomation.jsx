@@ -1,237 +1,3 @@
-// import { Link } from "react-router-dom";
-// import {
-//   ArrowRight,
-//   Check,
-//   Cpu,
-//   GitBranch,
-//   Sparkles,
-//   Workflow,
-// } from "lucide-react";
-// import InfrastructureUpgrade from "../components/InfrastructureUpgrade";
-// import Footer from "../components/Footer";
-
-// const HERO_BG = "https://www.compucodeltd.com/images/banners/body-bg.jpg";
-// const TECH_IMG = "https://www.compucodeltd.com/images/blobs/tech.png";
-
-// const ecosystemItems = [
-//   {
-//     icon: Workflow,
-//     title: "Workflow Automation",
-//     text: "Automate routine jobs and complex workflows with AI-driven precision, freeing your team for strategic initiatives.",
-//   },
-//   {
-//     icon: GitBranch,
-//     title: "System Integrations",
-//     text: "Connect applications, data pipelines, and production environments so processes run seamlessly end to end.",
-//   },
-//   {
-//     icon: Sparkles,
-//     title: "Generative AI Operations",
-//     text: "Embed Generative AI into automation to boost performance, meet service levels, and shrink production footprints.",
-//   },
-// ];
-
-// const features = [
-//   "Boost performance and meet application service levels",
-//   "Shrink production environments with smart automation",
-//   "Long-term efficiency and cost savings for routine jobs",
-//   "Application development aligned with business goals",
-// ];
-
-// export default function ProcessAutomation() {
-//   return (
-//     <div className="font-['Inter',sans-serif] bg-white">
-//       {/* ── Hero (Vestmark layout · CompuCode theme) ── */}
-//       <section className="relative pt-16 overflow-hidden">
-//         <div
-//           className="absolute inset-0 bg-cover bg-top bg-no-repeat"
-//           style={{ backgroundImage: `url(${HERO_BG})` }}
-//         />
-//         <div className="absolute inset-0 bg-black/55" />
-
-//         <div className="relative z-10 max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
-//           <p className="text-sm font-semibold tracking-widest uppercase text-white/80 mb-4">
-//             Our Solutions
-//           </p>
-//           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold  sora-semibold-600 text-white mb-6">
-//             Process Automation
-//           </h1>
-//           <p className="text-sm md:text-lg text-white/85 leading-relaxed max-w-2xl mx-auto mb-10">
-//             In today&apos;s fast-growing economy, process automation is a
-//             long-term initiative for better efficiency and cost savings—helping
-//             you meet growing demand from existing and new customers.
-//           </p>
-//           {/* <Link
-//             to="/contact"
-//             className="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-[#e53e2d] text-[#e53e2d] bg-transparent font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-[#e53e2d] hover:text-white transition-colors duration-200"
-//           >
-//             Get Started Now
-//             <ArrowRight size={18} />
-//           </Link> */}
-//           <Link
-//   to="/contact"
-//   className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#e53e2d] border-2 border-[#e53e2d] text-white font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#e53e2d] transition-colors duration-200"
-// >
-//   Get Started Now
-//   <ArrowRight size={18} />
-// </Link>
-//         </div>
-//       </section>
-
-//       {/* ── Ecosystem grid (Vestmark 3-col · CompuCode accents) ── */}
-//       <section className="py-20 md:py-24 px-6 bg-white">
-//         <div className="max-w-6xl mx-auto">
-//           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-//             Built to Work With Your Ecosystem
-//           </h2>
-//           <p className="text-gray-500 text-base leading-relaxed max-w-3xl mb-14">
-//             Compucode process automation connects your business initiatives with
-//             IT goals—delivering scalable, secure solutions powered by Generative
-//             AI across your technology stack.
-//           </p>
-
-//           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-//             {ecosystemItems.map(({ icon: Icon, title, text }) => (
-//               <div key={title}>
-//                 <div className="mb-4 w-12 h-12 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-//                   <Icon className="w-6 h-6 text-[#e53e2d]" strokeWidth={1.5} />
-//                 </div>
-//                 <h3 className="text-lg font-bold text-gray-900 mb-3">
-//                   {title}
-//                 </h3>
-//                 <p className="text-sm text-gray-500 leading-relaxed">{text}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* ── Feature split (Vestmark 2-col · CompuCode content & image) ── */}
-//       <section className="py-20 md:py-24 px-6 bg-[#fafafa]">
-//         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-//           <div>
-//             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5 leading-tight">
-//               Process Automation with{" "}
-//               <span className="text-[#e53e2d]">Generative AI</span>
-//             </h2>
-//             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-//               Establishments have come to realise that application development
-//               and process automation for routine jobs is a long-term initiative
-//               with a view of better efficiency and cost savings.
-//             </p>
-//             <Link
-//               to="/contact"
-//               className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-10"
-//             >
-//               Learn More
-//               <ArrowRight size={16} />
-//             </Link>
-
-//             <ul className="space-y-4">
-//               {features.map((item) => (
-//                 <li key={item} className="flex items-start gap-3">
-//                   <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-//                     <Check className="w-4 h-4 text-[#e53e2d]" strokeWidth={2.5} />
-//                   </span>
-//                   <span className="text-sm text-gray-700 leading-relaxed">
-//                     {item}
-//                   </span>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-
-//           <div className="flex justify-center lg:justify-end">
-//             <div className="relative w-full max-w-md">
-//               <div
-//                 className="absolute -inset-4 rounded-2xl opacity-20 blur-2xl"
-//                 style={{
-//                   background:
-//                     "linear-gradient(135deg, #e53e2d 0%, #7c3aed 50%, #14b8a6 100%)",
-//                 }}
-//               />
-//               <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f0f0f] p-8 min-h-[320px] flex flex-col items-center justify-center">
-//                 <img
-//                   src={TECH_IMG}
-//                   alt="Process automation infrastructure"
-//                   className="w-full max-w-xs object-contain mb-6"
-//                 />
-//                 <div className="flex items-center gap-2 text-white/90">
-//                   <Cpu className="w-5 h-5 text-[#e53e2d]" />
-//                   <span className="text-sm font-semibold tracking-wide">
-//                     Compucode Ltd
-//                   </span>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* ── Main content (CompuCode 2-col from live site) ── */}
-//       {/* <section className="py-20 md:py-24 px-6 bg-white">
-//         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
-//           <div className="md:col-span-5 flex justify-center">
-//             <img
-//               src={TECH_IMG}
-//               alt="Process Automation"
-//               className="w-full max-w-md object-contain"
-//             />
-//           </div>
-//           <div className="md:col-span-7">
-//             <p className="text-sm text-gray-500 leading-relaxed text-justify mb-6">
-//               In today&apos;s fast-growing economy, industrial processes upgrade
-//               gives the sector a cheap and more effective way of attending to
-//               the growing demand of existing and new customers. Establishments
-//               have come to realise that application development and process
-//               automation for routine jobs is a long-term initiative with a view
-//               of better efficiency and cost savings.
-//             </p>
-//             <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-8">
-//               Our process automation technology helps clients to boost
-//               performance and meet application service levels by shrinking their
-//               production environments.
-//             </h3>
-//             <Link
-//               to="/contact"
-//               className="inline-flex items-center gap-2 px-6 py-3 border border-[#e53e2d] text-[#e53e2d] font-bold text-xs tracking-widest uppercase hover:bg-[#e53e2d] hover:text-white transition-colors duration-200"
-//             >
-//               Get Started Now
-//               <ArrowRight size={16} />
-//             </Link>
-//           </div>
-//         </div>
-//       </section> */}
-
-//       {/* ── Bottom CTA (Vestmark split · CompuCode dark + red accent) ── */}
-//       {/* <section className="py-16 md:py-20 px-6 bg-[#111111]">
-//         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-//           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-//             Learn how Compucode{" "}
-//             <span className="text-[#e53e2d]">completes</span> your tech stack.
-//           </h2>
-//           <div>
-//             <p className="text-gray-400 text-sm leading-relaxed mb-8">
-//               Our AI-enhanced team delivers scalable, secure, integrated IT
-//               solutions—engineered for predictive scalability and an enterprise
-//               security mindset.
-//             </p>
-//             <Link
-//               to="/contact"
-//               className="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-[#e53e2d] text-[#e53e2d] font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-[#e53e2d] hover:text-white transition-colors duration-200"
-//             >
-//               Contact Us
-//               <ArrowRight size={18} />
-//             </Link>
-//           </div>
-//         </div>
-//       </section> */}
-
-//       <InfrastructureUpgrade />
-//       <Footer />
-//     </div>
-//   );
-// }
 
 import { Link } from "react-router-dom";
 import {
@@ -302,7 +68,7 @@ export default function ProcessAutomation() {
 
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#e53e2d] border-2 border-[#e53e2d] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#e53e2d] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#752921] border-2 border-[#752921] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#752921] transition-all duration-200"
           >
             Get Started Now
             <ArrowRight size={18} />
@@ -328,7 +94,7 @@ export default function ProcessAutomation() {
               <div key={title} className="text-center sm:text-left">
 
                 <div className="mb-4 w-12 h-12 mx-auto sm:mx-0 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                  <Icon className="w-6 h-6 text-[#e53e2d]" strokeWidth={1.5} />
+                  <Icon className="w-6 h-6 text-[#752921]" strokeWidth={1.5} />
                 </div>
 
                 <h3 className="text-base md:text-lg sora-semibold-600 text-gray-900 mb-3">
@@ -355,7 +121,7 @@ export default function ProcessAutomation() {
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl sora-semibold-600 text-gray-900 mb-5 leading-tight">
               Process Automation with{" "}
-              <span className="text-[#e53e2d]">Generative AI</span>
+              <span className="text-[#752921]">Generative AI</span>
             </h2>
 
             <p className="text-sm md:text-base dm-sans-medium-500 text-gray-500 leading-relaxed mb-6">
@@ -364,7 +130,7 @@ export default function ProcessAutomation() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#752921] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8"
             >
               Learn More
               <ArrowRight size={16} />
@@ -375,7 +141,7 @@ export default function ProcessAutomation() {
                 <li key={item} className="flex items-start gap-3">
 
                   <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-[#e53e2d]" />
+                    <Check className="w-4 h-4 text-[#752921]" />
                   </span>
 
                   <span className="text-sm dm-sans-medium-500 text-gray-700 leading-relaxed">
@@ -409,7 +175,7 @@ export default function ProcessAutomation() {
                 />
 
                 <div className="flex items-center gap-2 text-white/90">
-                  <Cpu className="w-5 h-5 text-[#e53e2d]" />
+                  <Cpu className="w-5 h-5 text-[#752921]" />
                   <span className="text-sm sora-semibold-600 tracking-wide">
                     Compucode Ltd
                   </span>

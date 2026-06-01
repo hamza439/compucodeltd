@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 
+import { useState } from "react";
+import { Mail, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import Footer from "../components/Footer";
 
 const HERO_BG = "https://www.compucodeltd.com/images/banners/body-bg.jpg";
 const LOGO_URL = "https://www.compucodeltd.com/images/logo/compucode.png";
@@ -11,29 +13,37 @@ const EMAILJS_PUBLIC_KEY  = "EAeHUI1ebUPhDt0sT";
 
 export default function ContactUs() {
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  // Initialize emailjs with public key
-  emailjs.init(EMAILJS_PUBLIC_KEY);
+  const [loading, setLoading]     = useState(false);
+  const [error, setError]         = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
+
+    const form = e.target;
+
+    const templateParams = {
+      from_name:  form.fullName.value,
+      from_email: form.email.value,
+      phone:      form.phone.value,
+      reason:     form.reason.value,
+      message:    form.message.value,
+      updates:    form.updates.checked ? "Yes" : "No",
+    };
+
     try {
-      const form = e.target;
-      const templateParams = {
-        from_name: form.fullName.value,
-        from_email: form.email.value,
-        phone: form.phone.value,
-        reason: form.reason.value,
-        message: form.message.value,
-        updates: form.updates.checked ? "Yes" : "No",
-      };
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
       setSubmitted(true);
       form.reset();
     } catch (err) {
       console.error("EmailJS error:", err);
+      setError("Something went wrong. Please try again or email us directly.");
     } finally {
       setLoading(false);
     }
@@ -42,7 +52,7 @@ export default function ContactUs() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* Hero Banner */}
+      {/* ── Hero Banner ── */}
       <div className="relative w-full h-[420px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -52,20 +62,20 @@ export default function ContactUs() {
         <div className="relative z-10 text-center">
           <p className="text-xs uppercase tracking-widest text-red-400 mb-3">Get In Touch</p>
           <h1 className="text-5xl font-bold text-white">Contact Us</h1>
-          <div className="mx-auto mt-4 w-16 h-1 bg-red-600 rounded-full" />
+          <div className="mx-auto mt-4 w-16 h-1 bg-[#752921] rounded-full" />
         </div>
       </div>
 
-      {/* Main Section */}
+      {/* ── Main Section ── */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-8 items-stretch">
 
-            {/* Form */}
+            {/* ── LEFT: Form ── */}
             <div className="lg:col-span-7">
               <div className="bg-white shadow-lg p-8 h-full">
                 <h4 className="text-xl font-semibold mb-6 flex items-center gap-2 text-gray-800">
-                  Send us a message
+                  <Mail size={20} className="text-[#752921]" /> Send us a message
                 </h4>
 
                 {submitted ? (
@@ -79,59 +89,69 @@ export default function ContactUs() {
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="mt-6 text-sm text-red-600 hover:text-red-700 underline font-medium"
+                      className="mt-6 text-sm text-[#752921] hover:text-[#752921] underline font-medium"
                     >
                       Send another message
                     </button>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
+
+                    {error && (
+                      <div className="bg-red-50 border border-red-200 text-[#752921] text-sm px-4 py-3 rounded">
+                        {error}
+                      </div>
+                    )}
+
                     {/* Full Name */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Full Name <span className="text-red-500">*</span>
+                        Full Name <span className="text-[#752921]">*</span>
                       </label>
                       <input
                         name="fullName"
                         placeholder="e.g. John Smith"
                         required
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm"
                       />
                     </div>
+
                     {/* Email */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address <span className="text-red-500">*</span>
+                        Email Address <span className="text-[#752921]">*</span>
                       </label>
                       <input
                         name="email"
                         placeholder="e.g. john@company.com"
                         required
                         type="email"
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm"
                       />
                     </div>
-                    {/* Phone */}
+
+                    {/* Telephone */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Telephone <span className="text-red-500">*</span>
+                        Telephone <span className="text-[#752921]">*</span>
                       </label>
                       <input
                         name="phone"
                         placeholder="e.g. +44 7000 000000"
                         required
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm"
                       />
                     </div>
+
                     {/* Reason */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Primary Reason for Contacting Us <span className="text-red-500">*</span>
+                        Primary Reason for Contacting Us <span className="text-[#752921]">*</span>
                       </label>
                       <select
                         name="reason"
                         required
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm text-gray-700 appearance-none bg-white"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-[#752921] text-sm text-gray-700 appearance-none bg-white"
                       >
                         <option value="">Select Primary Reason</option>
                         <option>Cloud Services</option>
@@ -141,30 +161,38 @@ export default function ContactUs() {
                         <option>General Enquiry</option>
                       </select>
                     </div>
+
                     {/* Message */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Message <span className="text-red-500">*</span>
+                        Message <span className="text-[#752921]">*</span>
                       </label>
                       <textarea
                         name="message"
                         placeholder="Tell us how we can help..."
                         required
-                        className="w-full border border-gray-300 p-3 rounded h-32 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm resize-none"
+                        className="w-full border border-gray-300 p-3 rounded h-32 focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm resize-none"
                       />
                     </div>
-                    {/* Updates Checkbox */}
+
+                    {/* Checkbox */}
                     <div className="flex items-start gap-2">
-                      <input type="checkbox" id="updates" name="updates" className="mt-1 accent-red-600" />
+                      <input
+                        type="checkbox"
+                        name="updates"
+                        id="updates"
+                        className="mt-1 accent-[#752921]"
+                      />
                       <label htmlFor="updates" className="text-sm text-gray-500">
                         Please include me in email updates on products, services, and special offers from Compucode.
                       </label>
                     </div>
-                    {/* Submit Button */}
+
+                    {/* Submit */}
                     <button
                       type="submit"
                       disabled={loading}
-                      className="bg-red-600 hover:bg-red-700 disabled:bg-red-400 text-white px-8 py-3 rounded font-semibold transition text-sm flex items-center gap-2"
+                      className="bg-[#752921] hover:bg-red-700 disabled:bg-red-400 text-white px-8 py-3 rounded font-semibold transition text-sm flex items-center gap-2"
                     >
                       {loading ? (
                         <>
@@ -174,18 +202,14 @@ export default function ContactUs() {
                           </svg>
                           Sending...
                         </>
-                      ) : (
-                        'Send Request'
-                      )}
+                      ) : "Send Request"}
                     </button>
                   </form>
                 )}
-                {/* Hidden iframe for Google Forms (if needed) */}
-                <iframe name="hidden_iframe" className="hidden" />
               </div>
             </div>
 
-            {/* Info Box */}
+            {/* ── RIGHT: Info Box ── */}
             <div className="lg:col-span-5">
               <div
                 className="relative h-full rounded overflow-hidden shadow-lg flex flex-col justify-between"
@@ -197,7 +221,6 @@ export default function ContactUs() {
                 />
                 <div className="absolute inset-0 bg-black/70" />
                 <div className="relative z-10 p-8 flex flex-col justify-between h-full">
-                  {/* Top Content */}
                   <div>
                     <img src={LOGO_URL} alt="Compucode" className="w-12 h-12 object-contain mb-6" />
                     <h2 className="text-3xl font-bold text-white leading-tight mb-3">
@@ -207,28 +230,20 @@ export default function ContactUs() {
                       Discover how Compucode solutions help your organisation simplify IT, integrate Generative AI, and solve unique business challenges.
                     </p>
                   </div>
-                  {/* Divider */}
+
                   <div className="my-6 border-t border-white/20" />
-                  {/* Contact Info */}
+
                   <div className="space-y-5">
-                    {/* Offices */}
                     <div className="flex items-start gap-3">
-                      <svg className="w-4 h-4 text-red-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        {/* MapPin icon SVG */}
-                        <path d="M10 2C6.134 2 3 5.134 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.866-3.134-7-7-7zm0 9a2 2 0 110-4 2 2 0 010 4z" />
-                      </svg>
+                      <MapPin size={16} className="text-red-400 mt-1 shrink-0" />
                       <div>
                         <p className="text-white text-sm font-semibold mb-1">Offices</p>
                         <p className="text-gray-300 text-xs leading-5">29 Lekki County Estate Road, Lagos, Nigeria</p>
                         <p className="text-gray-300 text-xs leading-5">85 Great Portland Street, London, W1W 7LT, UK</p>
                       </div>
                     </div>
-                    {/* Email */}
                     <div className="flex items-start gap-3">
-                      <svg className="w-4 h-4 text-red-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        {/* Mail icon SVG */}
-                        <path d="M2.94 6.94A2 2 0 014 6h12a2 2 0 011.06.94L10 13 2.94 6.94zM20 8v8a2 2 0 01-2 2H2a2 2 0 01-2-2V8l8 5 8-5z" />
-                      </svg>
+                      <Mail size={16} className="text-red-400 mt-1 shrink-0" />
                       <div>
                         <p className="text-white text-sm font-semibold mb-1">Email</p>
                         <a
@@ -240,7 +255,7 @@ export default function ContactUs() {
                       </div>
                     </div>
                   </div>
-                  {/* Footer text */}
+
                   <div className="mt-8 pt-6 border-t border-white/20">
                     <p className="text-gray-400 text-[11px] uppercase tracking-widest">
                       POWERING GROWTH FOR BUSINESSES WORLDWIDE
@@ -253,6 +268,8 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
