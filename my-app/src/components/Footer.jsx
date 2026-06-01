@@ -138,11 +138,11 @@ const Footer = () => {
 
             <Link
               to="/about"
-              className="mt-5 text-[#752921] text-sm font-medium w-fit relative group/link"
+              className="mt-5 text-[#8B2626] text-sm font-medium w-fit relative group/link"
             >
               Learn More
               <span
-                className="absolute left-0 -bottom-0.5 h-px bg-[#752921] w-0 transition-all duration-300 group-hover/link:w-full"
+                className="absolute left-0 -bottom-0.5 h-px bg-[#8B2626] w-0 transition-all duration-300 group-hover/link:w-full"
               />
             </Link>
           </div>
@@ -157,14 +157,14 @@ const Footer = () => {
               data-anim="sl"
               data-delay="0.1s"
             >
-              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#752921] transition-all duration-300 hover:border-[#752921] hover:bg-[#752921] hover:scale-110">
+              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#8B2626] transition-all duration-300 hover:border-[#8B2626] hover:bg-[#8B2626] hover:scale-110">
                 <FiMail size={16} />
               </div>
               <div>
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Email</p>
                 <a
                   href="mailto:contactus@compucodeltd.com"
-                  className="text-sm text-gray-700 hover:text-[#752921] transition-colors duration-200"
+                  className="text-sm text-gray-700 hover:text-[#8B2626] transition-colors duration-200"
                 >
                   contactus@compucodeltd.com
                 </a>
@@ -178,7 +178,7 @@ const Footer = () => {
               data-anim="sl"
               data-delay="0.2s"
             >
-              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#752921] transition-all duration-300 hover:border-[#752921] hover:bg-[#e53e2d0f] hover:scale-110">
+              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#8B2626] transition-all duration-300 hover:border-[#8B2626] hover:bg-[#e53e2d0f] hover:scale-110">
                 <FiMapPin size={16} />
               </div>
               <div>
@@ -196,7 +196,7 @@ const Footer = () => {
               data-anim="sl"
               data-delay="0.3s"
             >
-              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#752921] transition-all duration-300 hover:border-[#752921] hover:bg-[#e53e2d0f] hover:scale-110">
+              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#8B2626] transition-all duration-300 hover:border-[#8B2626] hover:bg-[#e53e2d0f] hover:scale-110">
                 <FiMapPin size={16} />
               </div>
               <div>
@@ -227,10 +227,10 @@ const Footer = () => {
               <li key={label}>
                 <Link
                   to={to}
-                  className="relative group/nav hover:text-[#752921] transition-colors duration-200"
+                  className="relative group/nav hover:text-[#8B2626] transition-colors duration-200"
                 >
                   {label}
-                  <span className="absolute left-0 -bottom-0.5 h-px bg-[#752921] w-0 transition-all duration-300 group-hover/nav:w-full" />
+                  <span className="absolute left-0 -bottom-0.5 h-px bg-[#8B2626] w-0 transition-all duration-300 group-hover/nav:w-full" />
                 </Link>
               </li>
             ))}
@@ -251,7 +251,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={label}
-                className="footer-anim w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center text-gray-500 hover:border-[#752921] hover:text-[#752921] hover:-translate-y-1 hover:scale-110 hover:bg-[#e53e2d08] transition-all duration-300"
+                className="footer-anim w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center text-gray-500 hover:border-[#8B2626] hover:text-[#8B2626] hover:-translate-y-1 hover:scale-110 hover:bg-[#e53e2d08] transition-all duration-300"
                 data-anim="sc"
                 data-delay={delay}
               >

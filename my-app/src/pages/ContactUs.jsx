@@ -30,6 +30,7 @@ export default function ContactUs() {
       reason:     form.reason.value,
       message:    form.message.value,
       updates:    form.updates.checked ? "Yes" : "No",
+      to_email:   "contactus@compucodeltd.com",
     };
 
     try {
@@ -62,7 +63,7 @@ export default function ContactUs() {
         <div className="relative z-10 text-center">
           <p className="text-xs uppercase tracking-widest text-red-400 mb-3">Get In Touch</p>
           <h1 className="text-5xl font-bold text-white">Contact Us</h1>
-          <div className="mx-auto mt-4 w-16 h-1 bg-[#752921] rounded-full" />
+          <div className="mx-auto mt-4 w-16 h-1 bg-[#8B2626] rounded-full" />
         </div>
       </div>
 
@@ -75,7 +76,7 @@ export default function ContactUs() {
             <div className="lg:col-span-7">
               <div className="bg-white shadow-lg p-8 h-full">
                 <h4 className="text-xl font-semibold mb-6 flex items-center gap-2 text-gray-800">
-                  <Mail size={20} className="text-[#752921]" /> Send us a message
+                  <Mail size={20} className="text-[#8B2626]" /> Send us a message
                 </h4>
 
                 {submitted ? (
@@ -89,7 +90,7 @@ export default function ContactUs() {
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="mt-6 text-sm text-[#752921] hover:text-[#752921] underline font-medium"
+                      className="mt-6 text-sm text-[#8B2626] hover:text-[#8B2626] underline font-medium"
                     >
                       Send another message
                     </button>
@@ -98,7 +99,7 @@ export default function ContactUs() {
                   <form onSubmit={handleSubmit} className="space-y-4">
 
                     {error && (
-                      <div className="bg-red-50 border border-red-200 text-[#752921] text-sm px-4 py-3 rounded">
+                      <div className="bg-red-50 border border-red-200 text-[#8B2626] text-sm px-4 py-3 rounded">
                         {error}
                       </div>
                     )}
@@ -106,52 +107,52 @@ export default function ContactUs() {
                     {/* Full Name */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Full Name <span className="text-[#752921]">*</span>
+                        Full Name <span className="text-[#8B2626]">*</span>
                       </label>
                       <input
                         name="fullName"
                         placeholder="e.g. John Smith"
                         required
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#8B2626] focus:ring-1 focus:ring-[#8B2626] text-sm"
                       />
                     </div>
 
                     {/* Email */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address <span className="text-[#752921]">*</span>
+                        Email Address <span className="text-[#8B2626]">*</span>
                       </label>
                       <input
                         name="email"
                         placeholder="e.g. john@company.com"
                         required
                         type="email"
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#8B2626] focus:ring-1 focus:ring-[#8B2626] text-sm"
                       />
                     </div>
 
                     {/* Telephone */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Telephone <span className="text-[#752921]">*</span>
+                        Telephone <span className="text-[#8B2626]">*</span>
                       </label>
                       <input
                         name="phone"
                         placeholder="e.g. +44 7000 000000"
                         required
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#8B2626] focus:ring-1 focus:ring-[#8B2626] text-sm"
                       />
                     </div>
 
                     {/* Reason */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Primary Reason for Contacting Us <span className="text-[#752921]">*</span>
+                        Primary Reason for Contacting Us <span className="text-[#8B2626]">*</span>
                       </label>
                       <select
                         name="reason"
                         required
-                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-[#752921] text-sm text-gray-700 appearance-none bg-white"
+                        className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-[#8B2626] text-sm text-gray-700 appearance-none bg-white"
                       >
                         <option value="">Select Primary Reason</option>
                         <option>Cloud Services</option>
@@ -165,13 +166,13 @@ export default function ContactUs() {
                     {/* Message */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Message <span className="text-[#752921]">*</span>
+                        Message <span className="text-[#8B2626]">*</span>
                       </label>
                       <textarea
                         name="message"
                         placeholder="Tell us how we can help..."
                         required
-                        className="w-full border border-gray-300 p-3 rounded h-32 focus:outline-none focus:border-[#752921] focus:ring-1 focus:ring-[#752921] text-sm resize-none"
+                        className="w-full border border-gray-300 p-3 rounded h-32 focus:outline-none focus:border-[#8B2626] focus:ring-1 focus:ring-[#8B2626] text-sm resize-none"
                       />
                     </div>
 
@@ -181,7 +182,7 @@ export default function ContactUs() {
                         type="checkbox"
                         name="updates"
                         id="updates"
-                        className="mt-1 accent-[#752921]"
+                        className="mt-1 accent-[#8B2626]"
                       />
                       <label htmlFor="updates" className="text-sm text-gray-500">
                         Please include me in email updates on products, services, and special offers from Compucode.
@@ -192,7 +193,7 @@ export default function ContactUs() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="bg-[#752921] hover:bg-red-700 disabled:bg-red-400 text-white px-8 py-3 rounded font-semibold transition text-sm flex items-center gap-2"
+                      className="bg-[#8B2626] hover:bg-red-700 disabled:bg-red-400 text-white px-8 py-3 rounded font-semibold transition text-sm flex items-center gap-2"
                     >
                       {loading ? (
                         <>

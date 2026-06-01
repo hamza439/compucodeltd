@@ -81,7 +81,7 @@ export default function BusinessContinuity() {
 
                    <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#752921] border-2 border-[#752921] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#752921] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
           >
 
             Get Started Now
@@ -116,7 +116,7 @@ export default function BusinessContinuity() {
               <div key={title} className="text-center sm:text-left">
 
                 <div className="mb-4 w-12 h-12 mx-auto sm:mx-0 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                  <Icon className="w-6 h-6 text-[#752921]" strokeWidth={1.5} />
+                  <Icon className="w-6 h-6 text-[#8B2626]" strokeWidth={1.5} />
                 </div>
 
                 <h3
@@ -151,7 +151,7 @@ export default function BusinessContinuity() {
               style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
             >
               Business Continuity with{" "}
-              <span className="text-[#752921]">Generative AI</span>
+              <span className="text-[#8B2626]">Generative AI</span>
             </h2>
 
             <p
@@ -165,7 +165,7 @@ export default function BusinessContinuity() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#752921] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
             >
               Learn More
               <ArrowRight size={16} />
@@ -175,7 +175,7 @@ export default function BusinessContinuity() {
               {features.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-[#752921]" strokeWidth={2.5} />
+                    <Check className="w-4 h-4 text-[#8B2626]" strokeWidth={2.5} />
                   </span>
                   <span
                     className="text-sm text-gray-700 leading-relaxed"
@@ -205,7 +205,7 @@ export default function BusinessContinuity() {
                   className="w-full max-w-xs object-contain mb-6"
                 />
                 <div className="flex items-center gap-2 text-white/90">
-                  <Cpu className="w-5 h-5 text-[#752921]" />
+                  <Cpu className="w-5 h-5 text-[#8B2626]" />
                   <span
                     className="text-sm tracking-wide"
                     style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
@@ -253,7 +253,7 @@ export default function BusinessContinuity() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-[#752921] text-[#752921] font-bold text-xs tracking-widest uppercase hover:bg-[#752921] hover:text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-[#8B2626] text-[#8B2626] font-bold text-xs tracking-widest uppercase hover:bg-[#8B2626] hover:text-white transition-colors duration-200"
             >
               Get Started Now
               <ArrowRight size={16} />

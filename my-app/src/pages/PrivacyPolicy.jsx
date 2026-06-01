@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
       <div className="min-h-screen bg-white" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
         {/* HERO */}
-        <div className="relative overflow-hidden" style={{ background: "#752921" }}>
+        <div className="relative overflow-hidden" style={{ background: "#8B2626" }}>
           <div className="absolute -top-16 -right-16 w-48 sm:w-64 h-48 sm:h-64 rounded-full bg-white opacity-5" />
           <div className="absolute -bottom-8 -left-8 w-32 sm:w-40 h-32 sm:h-40 rounded-full bg-white opacity-5" />
           <div className="absolute top-1/2 left-1/3 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-red-500 opacity-10 blur-3xl" />
@@ -66,13 +66,13 @@ export default function PrivacyPolicy() {
             style={{ fontFamily: "'Sora', sans-serif" }}
           >
             <span>📋 Jump to Section</span>
-            <span className="text-[#752921] text-lg leading-none transition-transform" style={{ transform: tocOpen ? "rotate(180deg)" : "rotate(0deg)" }}>▾</span>
+            <span className="text-[#8B2626] text-lg leading-none transition-transform" style={{ transform: tocOpen ? "rotate(180deg)" : "rotate(0deg)" }}>▾</span>
           </button>
           {tocOpen && (
             <nav className="mt-3 flex flex-col gap-1 pb-2">
               {sections.map((s) => (
                 <button key={s.id} onClick={() => scrollTo(s.id)}
-                  className={`text-left text-sm px-3 py-2 rounded-md transition-all ${activeSection === s.id ? "bg-red-50 text-[#752921] font-semibold border-l-2 border-[#752921]" : "text-gray-600 hover:text-[#752921] hover:bg-gray-50"}`}>
+                  className={`text-left text-sm px-3 py-2 rounded-md transition-all ${activeSection === s.id ? "bg-red-50 text-[#8B2626] font-semibold border-l-2 border-[#8B2626]" : "text-gray-600 hover:text-[#8B2626] hover:bg-gray-50"}`}>
                   {s.label}
                 </button>
               ))}
@@ -92,16 +92,16 @@ export default function PrivacyPolicy() {
               <nav className="flex flex-col gap-1">
                 {sections.map((s) => (
                   <button key={s.id} onClick={() => scrollTo(s.id)}
-                    className={`text-left text-sm px-3 py-2 rounded-md transition-all ${activeSection === s.id ? "bg-red-50 text-[#752921] font-semibold border-l-2 border-[#752921]" : "text-gray-600 hover:text-[#752921] hover:bg-gray-50"}`}>
+                    className={`text-left text-sm px-3 py-2 rounded-md transition-all ${activeSection === s.id ? "bg-red-50 text-[#8B2626] font-semibold border-l-2 border-[#8B2626]" : "text-gray-600 hover:text-[#8B2626] hover:bg-gray-50"}`}>
                     {s.label}
                   </button>
                 ))}
               </nav>
               <div className="mt-8 p-4 bg-red-50 border border-red-100 rounded-xl">
-                <p className="text-xs font-bold text-[#752921] mb-1" style={{ fontFamily: "'Sora', sans-serif" }}>Questions?</p>
+                <p className="text-xs font-bold text-[#8B2626] mb-1" style={{ fontFamily: "'Sora', sans-serif" }}>Questions?</p>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   Contact us at{" "}
-                  <a href="mailto:contactus@compucodeltd.com" className="text-[#752921] underline break-all">contactus@compucodeltd.com</a>
+                  <a href="mailto:contactus@compucodeltd.com" className="text-[#8B2626] underline break-all">contactus@compucodeltd.com</a>
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function PrivacyPolicy() {
           {/* MAIN CONTENT */}
           <main className="flex-1 min-w-0 space-y-12 sm:space-y-14">
 
-            <div className="bg-gray-50 border-l-4 border-[#752921] rounded-r-xl p-4 sm:p-6">
+            <div className="bg-gray-50 border-l-4 border-[#8B2626] rounded-r-xl p-4 sm:p-6">
               <p className="text-gray-700 leading-relaxed text-sm">
                 Compucode LTD (The "Company") is committed to maintaining robust privacy protections for its users. Our Privacy Policy is designed to help you understand how we collect, use and safeguard the information you provide to us and to assist you in making informed decisions when using our Service/site.
               </p>
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
             <Section id="who-we-are" title="Who We Are">
               <p>
                 Please visit{" "}
-                <a href="https://compucodeltd.com/about.html" className="text-[#752921] underline hover:text-[#752921] break-all">
+                <a href="https://compucodeltd.com/about.html" className="text-[#8B2626] underline hover:text-[#8B2626] break-all">
                   https://compucodeltd.com/about.html
                 </a>{" "}
                 to read about us.
@@ -133,7 +133,7 @@ export default function PrivacyPolicy() {
                   ['"You"', "refers to you, as a user of our Site or our Service(s)."],
                 ].map(([term, def]) => (
                   <li key={term} className="flex gap-3 text-sm text-gray-700">
-                    <span className="shrink-0 w-2 h-2 rounded-full bg-[#752921] mt-1.5" />
+                    <span className="shrink-0 w-2 h-2 rounded-full bg-[#8B2626] mt-1.5" />
                     <span><strong className="text-gray-900">{term}</strong> {def}</span>
                   </li>
                 ))}
@@ -184,7 +184,7 @@ export default function PrivacyPolicy() {
               <div className="mt-6 grid grid-cols-3 gap-3 sm:gap-4">
                 {["Encryption", "Firewalls", "SSL Technology"].map((item) => (
                   <div key={item} className="flex flex-col items-center p-3 sm:p-4 bg-red-50 rounded-xl border border-red-100 text-center">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#752921] flex items-center justify-center mb-2">
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#8B2626] flex items-center justify-center mb-2">
                       <span className="text-white text-xs">✓</span>
                     </div>
                     <span className="text-xs font-semibold text-gray-700" style={{ fontFamily: "'Sora', sans-serif" }}>{item}</span>
@@ -225,7 +225,7 @@ export default function PrivacyPolicy() {
                 If you have any questions regarding this Privacy Policy or the practices of this Site, please contact us by sending an email to:
               </p>
               <a href="mailto:contactus@compucodeltd.com"
-                className="inline-flex items-center gap-2 mt-4 bg-[#752921] hover:bg-[#752921] text-white text-sm font-medium px-5 sm:px-6 py-3 rounded-lg transition-colors">
+                className="inline-flex items-center gap-2 mt-4 bg-[#8B2626] hover:bg-[#8B2626] text-white text-sm font-medium px-5 sm:px-6 py-3 rounded-lg transition-colors">
                 <span>✉</span>
                 contactus@compucodeltd.com
               </a>
@@ -248,7 +248,7 @@ function Section({ id, title, children }) {
   return (
     <section id={id} className="scroll-mt-24">
       <div className="flex items-center gap-3 mb-4 sm:mb-5">
-        <div className="w-1 h-6 sm:h-7 rounded-full bg-[#752921] shrink-0" />
+        <div className="w-1 h-6 sm:h-7 rounded-full bg-[#8B2626] shrink-0" />
         <h2 className="text-lg sm:text-xl font-bold text-gray-900" style={{ fontFamily: "'Sora', sans-serif" }}>
           {title}
         </h2>

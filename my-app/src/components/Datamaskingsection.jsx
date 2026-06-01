@@ -93,10 +93,10 @@ export default function VestmarkSection() {
     <>
       <style>{`
         .vs-section {
-          background: #752921;
+          background: #8B2626;
           font-family: 'Helvetica Neue', Arial, sans-serif;
           overflow: hidden;
-          padding: 64px 40px;
+          padding: 32px 40px; /* Slimmer height */
         }
         .vs-inner {
           max-width: 900px;
@@ -241,7 +241,7 @@ export default function VestmarkSection() {
 
             <p
               className={`text-sm leading-relaxed mb-7 vs-fade-up ${visible ? "vs-visible" : ""}`}
-              style={{ color: "black", maxWidth: "370px", transitionDelay: "120ms" }}
+              style={{ color: "white", maxWidth: "370px", transitionDelay: "120ms" }}
             >
               Protect sensitive data and ensure compliance with our advanced data
               masking and governance solutions.

@@ -9,7 +9,9 @@ const NAV_LINKS = [
     label: "About Us",
     dropdownType: "simple",
     dropdown: [
-      { label: "Company Profile", to: "/about", desc: "Who we are & our mission" },
+      { label: "Company Profile", to: "/about", desc: "Overview of Compucode" },
+      { label: "Who We Are", to: "/about#who-we-are", desc: "Our identity & values" },
+      { label: "Our Mission", to: "/about#our-mission", desc: "What drives us forward" },
     ],
   },
   {
@@ -58,18 +60,39 @@ export default function Navbar() {
     setMobileExpanded(null);
   }, [location.pathname]);
 
+  const [pinnedDropdown, setPinnedDropdown] = useState(null);
+
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
         setOpenDropdown(null);
+        setPinnedDropdown(null);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const toggleDropdown = (i) => {
-    setOpenDropdown(openDropdown === i ? null : i);
+  const handleMouseEnter = (i) => {
+    if (pinnedDropdown === null) {
+      setOpenDropdown(i);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (pinnedDropdown === null) {
+      setOpenDropdown(null);
+    }
+  };
+
+  const handleClickNav = (i) => {
+    if (pinnedDropdown === i) {
+      setPinnedDropdown(null);
+      setOpenDropdown(null);
+    } else {
+      setPinnedDropdown(i);
+      setOpenDropdown(i);
+    }
   };
 
   const ChevronIcon = ({ className }) => (
@@ -111,7 +134,8 @@ export default function Navbar() {
         }
 
         .cc-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-        .cc-logo img { width: 44px; height: 44px; object-fit: contain; }
+        .cc-logo img { width: 54px; height: 54px; object-fit: contain; transition: transform 0.3s ease; }
+        .cc-logo:hover img { transform: scale(1.05); }
 
         .cc-links {
           display: flex;
@@ -121,65 +145,42 @@ export default function Navbar() {
           flex: 1;
         }
 
-        /* Regular nav link */
-        .cc-link {
+        /* Regular nav link & Desktop button — Uniform boxed container style */
+        .cc-link, .cc-nav-btn {
           display: inline-flex;
           align-items: center;
-          gap: 5px;
-          padding: 8px 14px;
+          gap: 6px;
+          padding: 10px 18px;
           font-size: 14px;
-          font-weight: 500;
-          border-radius: 8px;
-          cursor: pointer;
-          text-decoration: none;
-          border: none;
-          background: transparent;
-          color: #e53e2d;
-          text-shadow: 0 1px 4px rgba(0,0,0,0.25);
-          transition: color 0.2s, background 0.2s;
-          white-space: nowrap;
-        }
-        .cc-link:hover,
-        .cc-link.active {
-          color: #ffb4a8 !important;
-          background: rgba(255,255,255,0.12) !important;
-          text-shadow: none;
-        }
-
-        /* Our Solutions — desktop button */
-        .cc-nav-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 5px;
-          padding: 8px 18px;
-          border-radius: 100px;
-          font-size: 13.5px;
           font-weight: 600;
+          border-radius: 12px;
           cursor: pointer;
           text-decoration: none;
-          background:#752921;
-          color: #fff;
-          border: 2px solid #752921;
-          box-shadow: 0 2px 12px rgba(229,62,45,0.15);
-          transition: all 0.2s;
+          background: rgba(255,255,255,0.9);
+          color: #8B2626;
+          border: 1px solid rgba(117, 41, 33, 0.2);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          transition: all 0.25s ease;
           white-space: nowrap;
-          margin-left: 7px;
         }
-        .cc-nav-btn:hover {
+        .cc-link:hover, .cc-nav-btn:hover {
           background: #fff;
-          color: #752921 !important;
-          transform: translateY(-1px);
-          box-shadow: 0 4px 18px rgba(229,62,45,0.35);
+          color: #e53e2d !important;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(229,62,45,0.15);
+          border-color: rgba(229,62,45,0.4);
         }
-        .cc-nav-btn.active {
+        .cc-link.active, .cc-nav-btn.active {
           background: #fff;
-          color:#752921 !important;
+          color: #e53e2d !important;
+          border-color: rgba(229,62,45,0.6);
         }
-        .cc-nav-btn.open {
+        .cc-link.open, .cc-nav-btn.open {
           background: #fff;
-          color: #752921 !important;
+          color: #e53e2d !important;
+          border-color: rgba(229,62,45,0.6);
         }
-        .cc-nav-btn.open .cc-chevron {
+        .cc-link.open .cc-chevron, .cc-nav-btn.open .cc-chevron {
           transform: rotate(180deg);
           opacity: 1;
         }
@@ -206,7 +207,7 @@ export default function Navbar() {
           font-weight: 600;
           cursor: pointer;
           text-decoration: none;
-          background:#752921;
+          background:#8B2626;
           color: #fff;
           border: none;
           box-shadow: 0 2px 12px rgba(229,62,45,0.35);
@@ -215,7 +216,7 @@ export default function Navbar() {
         }
         .cc-cta:hover {
           background:#fff ;
-          color:#752921;
+          color:#8B2626;
           transform: translateY(-1px);
           box-shadow: 0 4px 18px rgba(229,62,45,0.45);
         }
@@ -301,7 +302,7 @@ export default function Navbar() {
         .cc-drop-mega-dot {
           width: 6px; height: 6px;
           border-radius: 50%;
-          background:#752921 ;
+          background:#8B2626 ;
           flex-shrink: 0;
           margin-top: 6px;
         }
@@ -458,12 +459,17 @@ export default function Navbar() {
           <div className="cc-links">
             {NAV_LINKS.map((link, i) =>
               link.dropdown ? (
-                <div key={i} style={{ position: "relative" }}>
+                <div 
+                  key={i} 
+                  style={{ position: "relative" }}
+                  onMouseEnter={() => handleMouseEnter(i)}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <button
                     className={`${link.isButton ? "cc-nav-btn" : "cc-link"} ${openDropdown === i ? "open" : ""} ${
                       link.dropdown.some((item) => isActiveRoute(location.pathname, item.to)) ? "active" : ""
                     }`}
-                    onClick={() => toggleDropdown(i)}
+                    onClick={() => handleClickNav(i)}
                   >
                     {link.label}
                     <ChevronIcon className="cc-chevron" />
@@ -473,7 +479,7 @@ export default function Navbar() {
                     <div className="cc-drop-simple">
                       <div className="cc-drop-simple-header">About</div>
                       {link.dropdown.map((item, j) => (
-                        <Link key={j} to={item.to} onClick={() => setOpenDropdown(null)}>
+                        <Link key={j} to={item.to} onClick={() => { setOpenDropdown(null); setPinnedDropdown(null); }}>
                           <span className="ds-label">{item.label}</span>
                           {item.desc && <span className="ds-desc">{item.desc}</span>}
                         </Link>
@@ -486,7 +492,7 @@ export default function Navbar() {
                       <div className="cc-drop-mega-header">Our Solutions</div>
                       <div className="cc-drop-mega-grid">
                         {link.dropdown.map((item, j) => (
-                          <Link key={j} to={item.to} className="cc-drop-mega-item" onClick={() => setOpenDropdown(null)}>
+                          <Link key={j} to={item.to} className="cc-drop-mega-item" onClick={() => { setOpenDropdown(null); setPinnedDropdown(null); }}>
                             <div className="cc-drop-mega-dot" />
                             <div>
                               <span className="dm-label">{item.label}</span>

@@ -85,7 +85,7 @@ export default function ApplicationDevelop() {
           </p>
            <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#752921] border-2 border-[#752921] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#752921] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
           >
             Get Started Now
             <ArrowRight size={16} />
@@ -115,7 +115,7 @@ export default function ApplicationDevelop() {
             {ecosystemItems.map(({ icon: Icon, title, text }) => (
               <div key={title}>
                 <div className="mb-4 w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#752921]" strokeWidth={1.5} />
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#8B2626]" strokeWidth={1.5} />
                 </div>
                 <h3
                   className="text-base sm:text-lg text-gray-900 mb-3"
@@ -142,7 +142,7 @@ export default function ApplicationDevelop() {
               style={HEADING}
             >
              Data Analytics{" "}
-              <span className="text-[#752921]">Generative AI</span>
+              <span className="text-[#8B2626]">Generative AI</span>
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed mb-6" style={BODY}>
            Data analytics helps you understand your customers and grow your business. Here at Compucode, we can help you discover, interprete and communicate meaningful patterns in data, in other for you to be able to apply it towards effective decision making. Consult us today, we are here to help you.
@@ -151,7 +151,7 @@ export default function ApplicationDevelop() {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#752921] text-white text-xs sm:text-sm rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-xs sm:text-sm rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
               style={{ ...HEADING, fontWeight: 600 }}
             >
               Learn More
@@ -162,7 +162,7 @@ export default function ApplicationDevelop() {
               {features.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-0.5 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-[#752921]" strokeWidth={2.5} />
+                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-[#8B2626]" strokeWidth={2.5} />
                   </span>
                   <span className="text-xs sm:text-sm text-gray-700 leading-relaxed" style={BODY}>
                     {item}
@@ -189,7 +189,7 @@ export default function ApplicationDevelop() {
                   className="w-full max-w-[220px] sm:max-w-xs object-contain mb-5 sm:mb-6"
                 />
                 <div className="flex items-center gap-2 text-white/90">
-                  <Cpu className="w-4 h-4 sm:w-5 sm:h-5 text-[#752921]" />
+                  <Cpu className="w-4 h-4 sm:w-5 sm:h-5 text-[#8B2626]" />
                   <span
                     className="text-xs sm:text-sm tracking-wide"
                     style={{ ...HEADING, fontWeight: 600 }}
@@ -232,7 +232,7 @@ export default function ApplicationDevelop() {
             </h3>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#752921] text-[#752921] text-xs tracking-widest uppercase hover:bg-[#752921] hover:text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#8B2626] text-[#8B2626] text-xs tracking-widest uppercase hover:bg-[#8B2626] hover:text-white transition-colors duration-200"
               style={{ ...HEADING, fontWeight: 700 }}
             >
               Get Started Now

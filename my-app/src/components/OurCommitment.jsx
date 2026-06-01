@@ -96,7 +96,7 @@ export default function ComplianceSection() {
 
         .comp-section {
           background: #fff;
-          padding: 56px 16px 64px;
+          padding: 32px 16px 40px;
           font-family: 'DM Sans', sans-serif;
         }
         .comp-inner { max-width: 1100px; margin: 0 auto; }
@@ -106,7 +106,7 @@ export default function ComplianceSection() {
         .comp-h2 {
           font-family: 'Sora', sans-serif;
           font-weight: 700;
-          font-size: clamp(1.4rem, 4vw, 2.2rem);
+          font-size: clamp(1.2rem, 3.5vw, 1.8rem);
           color: #111;
           margin: 0;
         }

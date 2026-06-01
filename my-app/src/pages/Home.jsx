@@ -13,11 +13,11 @@ function Home() {
     <>
       <HeroSection />
       {/* <Unlocking/> */}
-      <OurCommitment/>
       <Whychooseus/>
       <Datamaskingsection/>
-       <OurClient/>
+      <OurClient/>
       <PartnerSection/>
+      <OurCommitment/>
       <Footer/>
     </>
   )
