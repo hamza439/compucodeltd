@@ -298,7 +298,7 @@ export default function SolutionsCarousel() {
         .sol-btn {
           margin-top: auto;
           padding: 6px 0;
-          background: #8B2626;
+          background: #E84A3B;
           color: #fff;
           border: none;
           font-weight: 700;

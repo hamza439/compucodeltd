@@ -85,7 +85,7 @@ export default function SmartDocumentArchiving() {
 
                     <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#E84A3B] border-2 border-[#E84A3B] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#E84A3B] transition-all duration-200"
           >
 
               Get Started Now
@@ -116,7 +116,7 @@ export default function SmartDocumentArchiving() {
               {ecosystemItems.map(({ icon: Icon, title, text }) => (
                 <div key={title}>
                   <div className="mb-4 w-12 h-12 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-[#8B2626]" strokeWidth={1.5} />
+                    <Icon className="w-6 h-6 text-[#E84A3B]" strokeWidth={1.5} />
                   </div>
                   <h3 style={sora} className="text-base sm:text-lg text-gray-900 mb-3">
                     {title}
@@ -141,7 +141,7 @@ export default function SmartDocumentArchiving() {
                 className="text-2xl sm:text-3xl md:text-4xl text-gray-900 mb-5 leading-tight"
               >
                 Document Archiving with{" "}
-                <span className="text-[#8B2626]">Generative AI</span>
+                <span className="text-[#E84A3B]">Generative AI</span>
               </h2>
               <p style={dm} className="text-gray-500 text-sm leading-relaxed mb-6">
                 We will manage your documents for you, reduce risks of mistakes and
@@ -161,7 +161,7 @@ export default function SmartDocumentArchiving() {
                 {features.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-[#8B2626]" strokeWidth={2.5} />
+                      <Check className="w-4 h-4 text-[#E84A3B]" strokeWidth={2.5} />
                     </span>
                     <span style={dm} className="text-sm text-gray-700 leading-relaxed">
                       {item}
@@ -188,7 +188,7 @@ export default function SmartDocumentArchiving() {
                     className="w-full max-w-[200px] sm:max-w-xs object-contain mb-6"
                   />
                   <div className="flex items-center gap-2 text-white/90">
-                    <Cpu className="w-5 h-5 text-[#8B2626]" />
+                    <Cpu className="w-5 h-5 text-[#E84A3B]" />
                     <span style={sora} className="text-sm tracking-wide">
                       Compucode Ltd
                     </span>
@@ -222,7 +222,7 @@ export default function SmartDocumentArchiving() {
               <Link
                 to="/contact"
                 style={sora}
-                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 border border-[#8B2626] text-[#8B2626] text-xs tracking-widest uppercase hover:bg-[#8B2626] hover:text-white transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 border border-[#E84A3B] text-[#E84A3B] text-xs tracking-widest uppercase hover:bg-[#E84A3B] hover:text-white transition-colors duration-200"
               >
                 Get Started Now
                 <ArrowRight size={16} />

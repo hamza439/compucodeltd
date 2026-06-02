@@ -105,13 +105,13 @@ export default function AboutUs() {
 
         const TextBlock = (
           <div className="flex flex-col justify-center">
-            <p style={dmSansFont} className="text-xs font-semibold text-[#8B2626] uppercase tracking-widest mb-2">
+            <p style={dmSansFont} className="text-xs font-semibold text-[#E84A3B] uppercase tracking-widest mb-2">
               {sec.tag}
             </p>
             <h2 style={soraFont} className="text-xl sm:text-2xl md:text-3xl text-gray-900 mb-1 leading-snug">
               {sec.heading}
             </h2>
-            <h2 style={soraFont} className="text-xl sm:text-2xl md:text-3xl text-[#8B2626] mb-4 leading-snug">
+            <h2 style={soraFont} className="text-xl sm:text-2xl md:text-3xl text-[#E84A3B] mb-4 leading-snug">
               {sec.headingHighlight}
             </h2>
             <p style={dmSansFont} className="text-gray-500 text-sm leading-relaxed mb-6">
@@ -181,7 +181,7 @@ export default function AboutUs() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           <h2 style={soraFont} className="text-2xl sm:text-3xl md:text-4xl text-white leading-tight">
             Learn how Compucode{" "}
-            <span className="text-[#8B2626]">completes</span> your tech stack.
+            <span className="text-[#E84A3B]">completes</span> your tech stack.
           </h2>
           <div>
             <p style={dmSansFont} className="text-black/60 text-sm leading-relaxed mb-6">
@@ -191,7 +191,7 @@ export default function AboutUs() {
             <Link
               to="/contact"
               style={dmSansFont}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#8B2626] text-black font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-[#8B2626] transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#E84A3B] text-black font-bold text-sm tracking-wide uppercase rounded-sm hover:bg-[#E84A3B] transition-colors duration-200"
             >
               Contact Us
               <ArrowRight size={16} />

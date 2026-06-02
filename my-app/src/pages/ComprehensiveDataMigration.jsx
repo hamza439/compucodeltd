@@ -69,7 +69,7 @@ export default function ApplicationDevelop() {
 
            <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#E84A3B] border-2 border-[#E84A3B] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#E84A3B] transition-all duration-200"
           >
             Get Started Now
             <ArrowRight size={18} />
@@ -97,7 +97,7 @@ export default function ApplicationDevelop() {
               <div key={title}>
 
                 <div className="w-12 h-12 mb-4 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                  <Icon className="w-6 h-6 text-[#8B2626]" />
+                  <Icon className="w-6 h-6 text-[#E84A3B]" />
                 </div>
 
                 <h3 className="text-base md:text-lg sora-semibold-600 text-gray-900 mb-3">
@@ -125,7 +125,7 @@ export default function ApplicationDevelop() {
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl sora-semibold-600 text-gray-900 mb-5">
              Built to Work With Your Ecosystem{" "}
-              <span className="text-[#8B2626]">Generative AI</span>
+              <span className="text-[#E84A3B]">Generative AI</span>
             </h2>
 
             <p className="text-sm md:text-base dm-sans-regular-400 text-gray-500 mb-6 leading-relaxed">
@@ -134,7 +134,7 @@ export default function ApplicationDevelop() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-sm font-semibold rounded-md hover:bg-black mb-8"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#E84A3B] text-white text-sm font-semibold rounded-md hover:bg-black mb-8"
             >
               Learn More
               <ArrowRight size={16} />
@@ -146,7 +146,7 @@ export default function ApplicationDevelop() {
                 <li key={item} className="flex items-start gap-3">
 
                   <span className="w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center mt-0.5">
-                    <Check className="w-4 h-4 text-[#8B2626]" />
+                    <Check className="w-4 h-4 text-[#E84A3B]" />
                   </span>
 
                   <span className="text-sm dm-sans-regular-400 text-gray-700 leading-relaxed">
@@ -182,7 +182,7 @@ export default function ApplicationDevelop() {
                 />
 
                 <div className="flex items-center gap-2 text-white/90">
-                  <Cpu className="w-5 h-5 text-[#8B2626]" />
+                  <Cpu className="w-5 h-5 text-[#E84A3B]" />
                   <span className="text-sm sora-semibold-600">
                     Compucode Ltd
                   </span>

@@ -90,7 +90,7 @@ export default function eDiscoveryComplianceArcheiving() {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3.5 bg-[#E84A3B] border-2 border-[#E84A3B] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#E84A3B] transition-all duration-200"
           >
             Get Started Now
             <ArrowRight size={16} className="sm:w-[18px] sm:h-[18px]" />
@@ -114,7 +114,7 @@ export default function eDiscoveryComplianceArcheiving() {
             {ecosystemItems.map(({ icon: Icon, title, text }) => (
               <div key={title}>
                 <div className="w-11 h-11 sm:w-12 sm:h-12 mb-3 sm:mb-4 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#8B2626]" strokeWidth={1.5} />
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#E84A3B]" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-base md:text-lg sora-semibold-600 text-gray-900 mb-2 sm:mb-3">
                   {title}
@@ -134,7 +134,7 @@ export default function eDiscoveryComplianceArcheiving() {
           <div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl sora-semibold-600 text-gray-900 mb-4 sm:mb-5 leading-snug">
               Intelligent eDiscovery Powered by{" "}
-              <span className="text-[#8B2626]">Generative AI</span>
+              <span className="text-[#E84A3B]">Generative AI</span>
             </h2>
             <p className="text-sm md:text-base dm-sans-regular-400 text-gray-500 mb-5 sm:mb-6 leading-relaxed">
               Compucode's eDiscovery platform leverages AI to automate
@@ -144,7 +144,7 @@ export default function eDiscoveryComplianceArcheiving() {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-sm font-semibold rounded-md hover:bg-black mb-7 sm:mb-8 transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#E84A3B] text-white text-sm font-semibold rounded-md hover:bg-black mb-7 sm:mb-8 transition-colors"
             >
               Learn More
               <ArrowRight size={16} />
@@ -153,7 +153,7 @@ export default function eDiscoveryComplianceArcheiving() {
               {features.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center mt-0.5 flex-shrink-0">
-                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-[#8B2626]" strokeWidth={2.5} />
+                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-[#E84A3B]" strokeWidth={2.5} />
                   </span>
                   <span className="text-sm dm-sans-regular-400 text-gray-700 leading-relaxed">
                     {item}
@@ -179,7 +179,7 @@ export default function eDiscoveryComplianceArcheiving() {
                   className="w-full max-w-[200px] sm:max-w-xs object-contain mb-5 sm:mb-6"
                 />
                 <div className="flex items-center gap-2 text-white/90">
-                  <Archive className="w-4 h-4 sm:w-5 sm:h-5 text-[#8B2626]" />
+                  <Archive className="w-4 h-4 sm:w-5 sm:h-5 text-[#E84A3B]" />
                   <span className="text-xs sm:text-sm sora-semibold-600">Compucode Ltd</span>
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default function eDiscoveryComplianceArcheiving() {
                   key={label}
                   className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg border border-gray-100 bg-[#fafafa]"
                 >
-                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#8B2626] mb-1.5 sm:mb-2" strokeWidth={1.5} />
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#E84A3B] mb-1.5 sm:mb-2" strokeWidth={1.5} />
                   <span className="text-base sm:text-lg sora-semibold-600 text-gray-900">{stat}</span>
                   <span className="text-[10px] sm:text-xs dm-sans-regular-400 text-gray-400 mt-0.5">{label}</span>
                 </div>
@@ -238,7 +238,7 @@ export default function eDiscoveryComplianceArcheiving() {
             </div>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#8B2626] text-[#8B2626] font-bold text-xs tracking-widest uppercase hover:bg-[#8B2626] hover:text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 border border-[#E84A3B] text-[#E84A3B] font-bold text-xs tracking-widest uppercase hover:bg-[#E84A3B] hover:text-white transition-colors duration-200"
             >
               Get Started Now
               <ArrowRight size={15} />

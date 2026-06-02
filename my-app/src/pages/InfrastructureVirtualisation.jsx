@@ -108,7 +108,7 @@ export default function infrastructureVirtualisation() {
 
             <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#E84A3B] border-2 border-[#E84A3B] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#E84A3B] transition-all duration-200"
           >
               Get Started Now
               <ArrowRight size={18} />
@@ -138,7 +138,7 @@ export default function infrastructureVirtualisation() {
               {ecosystemItems.map(({ icon: Icon, title, text }) => (
                 <div key={title}>
                   <div className="mb-4 w-12 h-12 rounded-lg bg-[#e53e2d]/10 flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-[#8B2626]" strokeWidth={1.5} />
+                    <Icon className="w-6 h-6 text-[#E84A3B]" strokeWidth={1.5} />
                   </div>
                   <h3 style={soraHeading} className="text-base sm:text-lg text-gray-900 mb-3">
                     {title}
@@ -163,7 +163,7 @@ export default function infrastructureVirtualisation() {
                 className="ad-section-title  text-gray-900 mb-5 leading-tight"
               >
                Infrastructure Virtualization{" "}
-                <span className="text-[#8B2626]">Generative AI</span>
+                <span className="text-[#E84A3B]">Generative AI</span>
               </h2>
               <p style={dmSansBody} className="text-gray-500 text-sm leading-relaxed mb-6">
                 Since the application system is made to execute only on specified
@@ -172,7 +172,7 @@ export default function infrastructureVirtualisation() {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-xs sm:text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#E84A3B] text-white text-xs sm:text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
                 style={soraHeading}
               >
                 Learn More
@@ -183,7 +183,7 @@ export default function infrastructureVirtualisation() {
                 {features.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-[#8B2626]" strokeWidth={2.5} />
+                      <Check className="w-4 h-4 text-[#E84A3B]" strokeWidth={2.5} />
                     </span>
                     <span style={dmSansBody} className="text-sm text-gray-700 leading-relaxed">
                       {item}
@@ -210,7 +210,7 @@ export default function infrastructureVirtualisation() {
                     className="w-full max-w-[200px] sm:max-w-xs object-contain mb-6"
                   />
                   <div className="flex items-center gap-2 text-white/90">
-                    <Cpu className="w-5 h-5 text-[#8B2626]" />
+                    <Cpu className="w-5 h-5 text-[#E84A3B]" />
                     <span style={soraHeading} className="text-sm tracking-wide">
                       Compucode Ltd
                     </span>
@@ -254,7 +254,7 @@ export default function infrastructureVirtualisation() {
               </h3>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 border border-[#8B2626] text-[#8B2626] font-bold text-xs tracking-widest uppercase hover:bg-[#8B2626] hover:text-white transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 border border-[#E84A3B] text-[#E84A3B] font-bold text-xs tracking-widest uppercase hover:bg-[#E84A3B] hover:text-white transition-colors duration-200"
                 style={soraHeading}
               >
                 Get Started Now

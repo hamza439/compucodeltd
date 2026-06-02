@@ -93,7 +93,7 @@ export default function VestmarkSection() {
     <>
       <style>{`
         .vs-section {
-          background: #8B2626;
+          background: #E84A3B;
           font-family: 'Helvetica Neue', Arial, sans-serif;
           overflow: hidden;
           padding: 32px 40px; /* Slimmer height */
@@ -248,7 +248,7 @@ export default function VestmarkSection() {
             </p>
 
             <div className={`vs-fade-up ${visible ? "vs-visible" : ""}`} style={{ transitionDelay: "240ms" }}>
-              <a href="/solutions/data-security" className="vs-learn-btn">
+              <a  className="vs-learn-btn">
                 Learn More
                 <svg width="17" height="12" fill="none" viewBox="0 0 17 12">
                   <path fill="currentColor" d="M13.809 5.222 9.058 1.1l1.108-1.1 6.041 6-6.04 6-1.11-1.102 4.752-4.12H.207V5.222h13.602Z" />
@@ -257,7 +257,7 @@ export default function VestmarkSection() {
             </div>
 
             <div className={`vs-info-card vs-fade-up ${visible ? "vs-visible" : ""}`} style={{ transitionDelay: "360ms" }}>
-              <h4 className="text-xs font-bold uppercase mb-1" style={{ fontSize: "0.58rem", letterSpacing: "0.15em", color: "#e8402a" }}>
+              <h4 className="text-xs font-bold uppercase mb-1" style={{ fontSize: "0.58rem", letterSpacing: "0.15em", color: "#0A0A0A" }}>
                 Outsourced Services
               </h4>
               <p className="text-xs leading-relaxed" style={{ color: "white", fontSize: "0.76rem" }}>

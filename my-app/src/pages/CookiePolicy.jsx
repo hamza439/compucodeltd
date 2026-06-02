@@ -193,7 +193,7 @@ export default function CookiePolicy() {
       <div className="min-h-screen bg-white" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
         {/* HERO */}
-        <div className="relative overflow-hidden" style={{ background: "#8B2626" }}>
+        <div className="relative overflow-hidden" style={{ background: "#E84A3B" }}>
           <div className="absolute -top-16 -right-16 w-48 sm:w-72 h-48 sm:h-72 rounded-full bg-white opacity-5" />
           <div className="absolute -bottom-10 -left-10 w-36 sm:w-52 h-36 sm:h-52 rounded-full bg-white opacity-5" />
           <div className="absolute top-1/2 left-1/4 w-64 sm:w-[28rem] h-64 sm:h-[28rem] rounded-full bg-red-400 opacity-10 blur-3xl" />
@@ -215,13 +215,13 @@ export default function CookiePolicy() {
         <div className="lg:hidden sticky top-[64px] z-40 bg-white border-b border-gray-200 px-4 py-3">
           <button onClick={() => setTocOpen((o) => !o)} className="flex items-center justify-between w-full text-sm font-semibold text-gray-700" style={{ fontFamily: "'Sora', sans-serif" }}>
             <span>🍪 Jump to Section</span>
-            <span className="text-[#8B2626] text-lg leading-none transition-transform duration-200" style={{ transform: tocOpen ? "rotate(180deg)" : "rotate(0deg)" }}>▾</span>
+            <span className="text-[#E84A3B] text-lg leading-none transition-transform duration-200" style={{ transform: tocOpen ? "rotate(180deg)" : "rotate(0deg)" }}>▾</span>
           </button>
           {tocOpen && (
             <nav className="mt-3 flex flex-col gap-1 pb-2">
               {tocSections.map((s) => (
                 <button key={s.id} onClick={() => scrollTo(s.id)}
-                  className={`text-left text-sm px-3 py-2 rounded-md transition-all ${activeSection === s.id ? "bg-red-50 text-[#8B2626] font-semibold border-l-2 border-[#8B2626]" : "text-gray-600 hover:text-[#8B2626] hover:bg-gray-50"}`}>
+                  className={`text-left text-sm px-3 py-2 rounded-md transition-all ${activeSection === s.id ? "bg-red-50 text-[#E84A3B] font-semibold border-l-2 border-[#E84A3B]" : "text-gray-600 hover:text-[#E84A3B] hover:bg-gray-50"}`}>
                   {s.label}
                 </button>
               ))}
@@ -239,16 +239,16 @@ export default function CookiePolicy() {
               <nav className="flex flex-col gap-1">
                 {tocSections.map((s) => (
                   <button key={s.id} onClick={() => scrollTo(s.id)}
-                    className={`text-left text-sm px-3 py-2 rounded-md transition-all ${s.label.startsWith("↳") ? "pl-6" : ""} ${activeSection === s.id ? "bg-red-50 text-[#8B2626] font-semibold border-l-2 border-[#8B2626]" : "text-gray-600 hover:text-[#8B2626] hover:bg-gray-50"}`}>
+                    className={`text-left text-sm px-3 py-2 rounded-md transition-all ${s.label.startsWith("↳") ? "pl-6" : ""} ${activeSection === s.id ? "bg-red-50 text-[#E84A3B] font-semibold border-l-2 border-[#E84A3B]" : "text-gray-600 hover:text-[#E84A3B] hover:bg-gray-50"}`}>
                     {s.label}
                   </button>
                 ))}
               </nav>
               <div className="mt-8 p-4 bg-red-50 border border-red-100 rounded-xl">
-                <p className="text-xs font-bold text-[#8B2626] mb-1" style={{ fontFamily: "'Sora', sans-serif" }}>Questions?</p>
+                <p className="text-xs font-bold text-[#E84A3B] mb-1" style={{ fontFamily: "'Sora', sans-serif" }}>Questions?</p>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   Email us at{" "}
-                  <a href="mailto:contactus@compucodeltd.com" className="text-[#8B2626] underline break-all">contactus@compucodeltd.com</a>
+                  <a href="mailto:contactus@compucodeltd.com" className="text-[#E84A3B] underline break-all">contactus@compucodeltd.com</a>
                 </p>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function CookiePolicy() {
           {/* MAIN CONTENT */}
           <main className="flex-1 min-w-0 space-y-12 sm:space-y-14">
 
-            <div className="bg-gray-50 border-l-4 border-[#8B2626] rounded-r-xl p-4 sm:p-6">
+            <div className="bg-gray-50 border-l-4 border-[#E84A3B] rounded-r-xl p-4 sm:p-6">
               <p className="text-gray-700 leading-relaxed text-sm">
                 This Cookie Policy explains what cookies are and how we use them, the types of cookies we use, the information we collect using cookies and how that information is used, and how to manage the cookie settings.
               </p>
@@ -303,7 +303,7 @@ export default function CookiePolicy() {
               <p className="text-sm text-gray-700 leading-relaxed">
                 You can change your cookie preferences any time by clicking the button below. This will let you revisit the cookie consent banner and change your preferences or withdraw your consent right away.
               </p>
-              <button className="mt-4 inline-flex items-center gap-2 bg-[#8B2626] hover:bg-[#8B2626] text-white text-sm font-medium px-5 py-3 rounded-lg transition-colors">
+              <button className="mt-4 inline-flex items-center gap-2 bg-[#E84A3B] hover:bg-[#E84A3B] text-white text-sm font-medium px-5 py-3 rounded-lg transition-colors">
                 🍪 Manage Cookie Preferences
               </button>
               <p className="mt-6 text-sm text-gray-700 leading-relaxed">
@@ -317,9 +317,9 @@ export default function CookiePolicy() {
                   ["Internet Explorer", "https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc"],
                 ].map(([name, url]) => (
                   <li key={name} className="flex items-start gap-2 text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#8B2626] shrink-0 mt-1.5" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E84A3B] shrink-0 mt-1.5" />
                     <span className="text-gray-700 font-medium w-32 shrink-0">{name}:</span>
-                    <a href={url} target="_blank" rel="noreferrer" className="text-[#8B2626] underline hover:text-red-800 break-all text-xs">{url}</a>
+                    <a href={url} target="_blank" rel="noreferrer" className="text-[#E84A3B] underline hover:text-red-800 break-all text-xs">{url}</a>
                   </li>
                 ))}
               </ul>
@@ -329,7 +329,7 @@ export default function CookiePolicy() {
             </PageSection>
 
             <div className="border-t border-gray-200 pt-8 text-xs text-gray-400 text-center">
-              Cookie Policy Generated By <span className="text-[#8B2626] font-semibold">CookieYes</span> Cookie Policy Generator. © Compucode LTD. All rights reserved.
+              Cookie Policy Generated By <span className="text-[#E84A3B] font-semibold">CookieYes</span> Cookie Policy Generator. © Compucode LTD. All rights reserved.
             </div>
           </main>
         </div>
@@ -345,7 +345,7 @@ function PageSection({ id, title, children }) {
   return (
     <section id={id} className="scroll-mt-24">
       <div className="flex items-center gap-3 mb-4 sm:mb-5">
-        <div className="w-1 h-6 sm:h-7 rounded-full bg-[#8B2626] shrink-0" />
+        <div className="w-1 h-6 sm:h-7 rounded-full bg-[#E84A3B] shrink-0" />
         <h2 className="text-lg sm:text-xl font-bold text-gray-900" style={{ fontFamily: "'Sora', sans-serif" }}>
           {title}
         </h2>

@@ -85,7 +85,7 @@ export default function AboutSection() {
 
               {/* Badge */}
               <div className={`flex items-center gap-2 mb-4 ${animBase} delay-100 ${sectionVisible ? `${shown} translate-y-0` : `${hidden} translate-y-4`}`}>
-                <div className="w-3 h-3 rounded-sm bg-[#8B2626]" />
+                <div className="w-3 h-3 rounded-sm bg-[#E84A3B]" />
                 <span className="text-xs font-semibold tracking-widest text-gray-400 uppercase" style={{ fontFamily: "'Sora', sans-serif" }}>
                   About Us
                 </span>
@@ -112,8 +112,8 @@ export default function AboutSection() {
               {/* CTA Button */}
               <div className={`mb-8 ${animBase} delay-[400ms] ${sectionVisible ? `${shown} translate-y-0` : `${hidden} translate-y-4`}`}>
                 <a
-                  href="/contact"
-                  className="group inline-flex items-center gap-2 border border-[#8B2626] text-[#8B2626] text-sm px-5 py-2.5 font-medium hover:bg-[#8B2626] hover:text-white transition-all duration-200"
+                  
+                  className="group inline-flex items-center gap-2 border border-[#E84A3B] text-[#E84A3B] text-sm px-5 py-2.5 font-medium hover:bg-[#E84A3B] hover:text-white transition-all duration-200"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   Learn More
@@ -137,7 +137,7 @@ export default function AboutSection() {
                       hover:translate-x-1 cursor-default`}
                   >
                     <div className="flex-shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110">
-                      <Icon className="w-5 h-5 text-[#8B2626]" strokeWidth={1.5} />
+                      <Icon className="w-5 h-5 text-[#E84A3B]" strokeWidth={1.5} />
                     </div>
                     <div>
                       <h4

@@ -93,7 +93,7 @@ export default function AiEnhancedDataArchiving() {
           > */}
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#E84A3B] border-2 border-[#E84A3B] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#E84A3B] transition-all duration-200"
           >
             Schedule a Consultation
             <ArrowRight size={18} />
@@ -128,7 +128,7 @@ export default function AiEnhancedDataArchiving() {
                 className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 sm:p-8 text-center flex flex-col"
               >
                 <div className="mb-5 mx-auto w-14 h-14 rounded-xl bg-[#e53e2d]/10 flex items-center justify-center">
-                  <Icon className="w-7 h-7 text-[#8B2626]" strokeWidth={1.5} />
+                  <Icon className="w-7 h-7 text-[#E84A3B]" strokeWidth={1.5} />
                 </div>
                 <h3
                   className="text-base sm:text-lg text-gray-900 mb-3"
@@ -160,7 +160,7 @@ export default function AiEnhancedDataArchiving() {
               style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
             >
               Intelligent Archiving with{" "}
-              <span className="text-[#8B2626]">Generative AI</span>
+              <span className="text-[#E84A3B]">Generative AI</span>
             </h2>
 
             <p
@@ -174,7 +174,7 @@ export default function AiEnhancedDataArchiving() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#E84A3B] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
             >
               Learn More
               <ArrowRight size={16} />
@@ -184,7 +184,7 @@ export default function AiEnhancedDataArchiving() {
               {archiveFeatures.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-[#8B2626]" strokeWidth={2.5} />
+                    <Check className="w-4 h-4 text-[#E84A3B]" strokeWidth={2.5} />
                   </span>
                   <span
                     className="text-sm text-gray-700 leading-relaxed"
@@ -227,7 +227,7 @@ export default function AiEnhancedDataArchiving() {
           {/* Structured */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Database className="w-6 h-6 text-[#8B2626] flex-shrink-0" />
+              <Database className="w-6 h-6 text-[#E84A3B] flex-shrink-0" />
               <h3
                 className="text-xl sm:text-2xl text-gray-900"
                 style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
@@ -249,7 +249,7 @@ export default function AiEnhancedDataArchiving() {
             <ul className="space-y-3">
               {structuredBullets.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#8B2626] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#E84A3B] flex-shrink-0 mt-0.5" />
                   <span
                     className="text-sm text-gray-700"
                     style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 400 }}
@@ -264,7 +264,7 @@ export default function AiEnhancedDataArchiving() {
           {/* Unstructured */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <FileSearch className="w-6 h-6 text-[#8B2626] flex-shrink-0" />
+              <FileSearch className="w-6 h-6 text-[#E84A3B] flex-shrink-0" />
               <h3
                 className="text-xl sm:text-2xl text-gray-900"
                 style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
@@ -286,7 +286,7 @@ export default function AiEnhancedDataArchiving() {
             <ul className="space-y-3">
               {unstructuredBullets.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#8B2626] flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#E84A3B] flex-shrink-0 mt-0.5" />
                   <span
                     className="text-sm text-gray-700"
                     style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 400 }}

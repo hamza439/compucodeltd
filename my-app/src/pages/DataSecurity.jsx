@@ -63,7 +63,7 @@ const serviceSections = [
 ];
 
 const ctaClass =
-  "inline-flex items-center gap-2 px-6 py-3 border border-[#8B2626] text-[#8B2626] font-bold text-xs tracking-widest uppercase hover:bg-[#8B2626] hover:text-white transition-colors duration-200";
+  "inline-flex items-center gap-2 px-6 py-3 border border-[#E84A3B] text-[#E84A3B] font-bold text-xs tracking-widest uppercase hover:bg-[#E84A3B] hover:text-white transition-colors duration-200";
 
 export default function DataSecurity() {
   return (
@@ -94,7 +94,7 @@ export default function DataSecurity() {
           </h1>
  <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#8B2626] border-2 border-[#8B2626] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#8B2626] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#E84A3B] border-2 border-[#E84A3B] text-white font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm hover:bg-white hover:text-[#E84A3B] transition-all duration-200"
           >
             Get Started Now
             <ArrowRight size={18} />
@@ -144,7 +144,7 @@ export default function DataSecurity() {
                   style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
                 >
                   Data{" "}
-                  <span className="text-[#8B2626]">{item.accent}</span>
+                  <span className="text-[#E84A3B]">{item.accent}</span>
                 </h3>
 
                 <p
@@ -176,7 +176,7 @@ export default function DataSecurity() {
               style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
             >
               AI-Driven Data{" "}
-              <span className="text-[#8B2626]">Security</span>
+              <span className="text-[#E84A3B]">Security</span>
             </h2>
 
             <p
@@ -190,7 +190,7 @@ export default function DataSecurity() {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2626] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#E84A3B] text-white text-sm font-semibold rounded-md hover:bg-black transition-colors mb-8 sm:mb-10"
             >
               Learn More
               <ArrowRight size={16} />
@@ -200,7 +200,7 @@ export default function DataSecurity() {
               {securityFeatures.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#e53e2d]/15 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-[#8B2626]" strokeWidth={2.5} />
+                    <Check className="w-4 h-4 text-[#E84A3B]" strokeWidth={2.5} />
                   </span>
                   <span
                     className="text-sm text-gray-700 leading-relaxed"
@@ -230,7 +230,7 @@ export default function DataSecurity() {
                   className="w-full max-w-xs object-contain mb-6"
                 />
                 <div className="flex items-center gap-2 text-white/90">
-                  <Cpu className="w-5 h-5 text-[#8B2626]" />
+                  <Cpu className="w-5 h-5 text-[#E84A3B]" />
                   <span
                     className="text-sm tracking-wide"
                     style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
@@ -268,7 +268,7 @@ export default function DataSecurity() {
                 className="text-xl sm:text-2xl md:text-3xl text-gray-900 mb-5"
                 style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
               >
-                Data <span className="text-[#8B2626]">{section.accent}</span>
+                Data <span className="text-[#E84A3B]">{section.accent}</span>
               </h3>
 
               {section.paragraphs.map((para) => (

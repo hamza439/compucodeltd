@@ -189,14 +189,14 @@ export default function HeroWithCards() {
             <h1 className="hero-h1" style={{ fontFamily: "'Sora', sans-serif", fontSize: "clamp(1.8rem,4vw,3.2rem)", fontWeight: 700, lineHeight: 1.1, color: "white", textTransform: "uppercase" }}>
               Unified array of data solutions
               <br />
-              powered by <span style={{ color: "#8B2626" }}>Generative AI</span>
+              powered by <span style={{ color: "#E84A3B" }}>Generative AI</span>
             </h1>
             <p className="hero-p text-white/80 text-[15px] leading-[1.5] mt-6 max-w-xl text-center">
               Harness next-generation AI to transform your organisation archives,
               retrieves, and acts on critical data — at enterprise scale.
             </p>
             <div className="hero-btn mt-8">
-              <button className="cta-btn bg-[#8B2626] text-white text-[13px] tracking-[0.1em] uppercase px-6 py-3 font-medium">
+              <button className="cta-btn bg-[#E84A3B] text-white text-[13px] tracking-[0.1em] uppercase px-6 py-3 font-medium">
                 Explore Generative AI Data Archiving Solutions
               </button>
             </div>
@@ -222,7 +222,7 @@ export default function HeroWithCards() {
                   }}
                   className={`card-item card-hover bg-white flex flex-col cursor-pointer
                     ${isActive
-                      ? "border-[2.5px] border-[#8B2626] -translate-y-1.5 z-10 card-active"
+                      ? "border-[2.5px] border-[#E84A3B] -translate-y-1.5 z-10 card-active"
                       : "border border-gray-200"
                     }`}
                 >
@@ -234,7 +234,7 @@ export default function HeroWithCards() {
                   </div>
 
                   {/* Red footer */}
-                  <div className="w-full bg-[#8B2626] px-5 pt-5 pb-4 flex-shrink-0">
+                  <div className="w-full bg-[#E84A3B] px-5 pt-5 pb-4 flex-shrink-0">
                     <h3
                       className="text-[14px] font-bold text-white leading-snug text-center"
                       style={{ minHeight: "3.2em", display: "flex", alignItems: "center", justifyContent: "center" }}

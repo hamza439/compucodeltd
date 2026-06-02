@@ -27,7 +27,7 @@ export default function InfrastructureUpgrade() {
               >
                 Infrastructure{" "}
                 <span
-                  className="text-[#8B2626]"
+                  className="text-[#E84A3B]"
                   style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
                 >
                   Upgrade!
@@ -47,7 +47,7 @@ export default function InfrastructureUpgrade() {
             <div className="w-full flex lg:justify-center">
               <a
                 href="/contact"
-                className="w-full sm:w-8/12 lg:ml-8 bg-[#8B2626] text-white text-xs font-bold tracking-widest uppercase py-5 rounded flex items-center justify-center gap-2 hover:bg-[#8B2626] transition-colors duration-200"
+                className="w-full sm:w-8/12 lg:ml-8 bg-[#E84A3B] text-white text-xs font-bold tracking-widest uppercase py-5 rounded flex items-center justify-center gap-2 hover:bg-[#E84A3B] transition-colors duration-200"
                 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 500 }}
               >
                 Talk to us about it

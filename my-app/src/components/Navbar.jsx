@@ -157,7 +157,7 @@ export default function Navbar() {
           cursor: pointer;
           text-decoration: none;
           background: rgba(255,255,255,0.9);
-          color: #8B2626;
+          color: #E84A3B;
           border: 1px solid rgba(117, 41, 33, 0.2);
           box-shadow: 0 4px 12px rgba(0,0,0,0.05);
           transition: all 0.25s ease;
@@ -207,7 +207,7 @@ export default function Navbar() {
           font-weight: 600;
           cursor: pointer;
           text-decoration: none;
-          background:#8B2626;
+          background:#E84A3B;
           color: #fff;
           border: none;
           box-shadow: 0 2px 12px rgba(229,62,45,0.35);
@@ -216,7 +216,7 @@ export default function Navbar() {
         }
         .cc-cta:hover {
           background:#fff ;
-          color:#8B2626;
+          color:#E84A3B;
           transform: translateY(-1px);
           box-shadow: 0 4px 18px rgba(229,62,45,0.45);
         }
@@ -302,7 +302,7 @@ export default function Navbar() {
         .cc-drop-mega-dot {
           width: 6px; height: 6px;
           border-radius: 50%;
-          background:#8B2626 ;
+          background:#E84A3B ;
           flex-shrink: 0;
           margin-top: 6px;
         }
