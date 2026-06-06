@@ -96,7 +96,7 @@ export default function VestmarkSection() {
           background: #E84A3B;
           font-family: 'Helvetica Neue', Arial, sans-serif;
           overflow: hidden;
-          padding: 32px 40px; /* Slimmer height */
+          padding: 16px 40px;
         }
         .vs-inner {
           max-width: 900px;
@@ -110,12 +110,15 @@ export default function VestmarkSection() {
           display: flex;
           align-items: center;
           justify-content: center;
+          height: 220px;
         }
         .vs-cards-scene {
           position: relative;
           width: 430px;
           height: 410px;
           flex-shrink: 0;
+          transform: scale(0.55);
+          transform-origin: center;
         }
 
         /* ── Animations ── */
@@ -189,9 +192,9 @@ export default function VestmarkSection() {
 
         /* ── Info card hover ── */
         .vs-info-card {
-          margin-top: 2rem;
+          margin-top: 0.5rem;
           border-radius: 0.375rem;
-          padding: 1rem;
+          padding: 0.5rem 1rem;
           background: rgba(255,255,255,0.04);
           border: 1px solid rgba(255,255,255,0.08);
           max-width: 270px;
@@ -233,14 +236,14 @@ export default function VestmarkSection() {
           <div className="vs-left">
 
             <h2
-              className={`font-extrabold text-white leading-tight mb-4 vs-fade-up ${visible ? "vs-visible" : ""}`}
+              className={`font-extrabold text-white leading-tight mb-2 vs-fade-up ${visible ? "vs-visible" : ""}`}
               style={{ fontSize: "clamp(1.7rem,3vw,2.5rem)", letterSpacing: "-0.01em", transitionDelay: "0ms" }}
             >
               Data Masking &amp;<br />Governance
             </h2>
 
             <p
-              className={`text-sm leading-relaxed mb-7 vs-fade-up ${visible ? "vs-visible" : ""}`}
+              className={`text-sm leading-relaxed mb-3 vs-fade-up ${visible ? "vs-visible" : ""}`}
               style={{ color: "white", maxWidth: "370px", transitionDelay: "120ms" }}
             >
               Protect sensitive data and ensure compliance with our advanced data
@@ -256,8 +259,8 @@ export default function VestmarkSection() {
               </a>
             </div>
 
-            <div className={`vs-info-card vs-fade-up ${visible ? "vs-visible" : ""}`} style={{ transitionDelay: "360ms" }}>
-              <h4 className="text-xs font-bold uppercase mb-1" style={{ fontSize: "0.58rem", letterSpacing: "0.15em", color: "#0A0A0A" }}>
+            <div className={`vs-info-card vs-fade-up ${visible ? "vs-visible" : ""}`} style={{ transitionDelay: "360ms", marginTop: "0.5rem" }}>
+              <h4 className="text-xs font-bold uppercase mb-0.5" style={{ fontSize: "0.58rem", letterSpacing: "0.15em", color: "#0A0A0A" }}>
                 Outsourced Services
               </h4>
               <p className="text-xs leading-relaxed" style={{ color: "white", fontSize: "0.76rem" }}>
@@ -322,7 +325,7 @@ export default function VestmarkSection() {
                     className="absolute rounded-xl"
                     style={{
                       ...c.popPos,
-                      width: "188px", padding: "1rem 1.1rem 0.9rem",
+                      width: "320px", padding: "1.5rem 1.8rem 1.4rem",
                       background: "#1e1e1e", border: "1px solid rgba(232,64,42,0.45)",
                       boxShadow: "0 12px 40px rgba(0,0,0,0.8)", zIndex: 50,
                       opacity: open === c.id ? 1 : 0,
@@ -333,11 +336,11 @@ export default function VestmarkSection() {
                   >
                     <button
                       onClick={() => toggle(c.id)}
-                      style={{ position: "absolute", top: 7, right: 9, background: "none", border: "none", color: "#555", cursor: "pointer", fontSize: 12 }}
+                      style={{ position: "absolute", top: 12, right: 14, background: "none", border: "none", color: "#888", cursor: "pointer", fontSize: 20 }}
                     >✕</button>
-                    <h3 style={{ fontSize: "0.73rem", fontWeight: 700, color: "#e8402a", marginBottom: "0.3rem" }}>{c.title}</h3>
-                    <p style={{ fontSize: "0.69rem", color: "#888", lineHeight: 1.5, marginBottom: "0.5rem" }}>{c.desc}</p>
-                    <a href={c.link} style={{ fontSize: "0.67rem", color: "#fff", opacity: 0.8, textDecoration: "none" }}>Learn more →</a>
+                    <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#e8402a", marginBottom: "0.6rem" }}>{c.title}</h3>
+                    <p style={{ fontSize: "1.1rem", color: "#bbb", lineHeight: 1.6, marginBottom: "0.8rem" }}>{c.desc}</p>
+                    <a href={c.link} style={{ fontSize: "1.1rem", color: "#fff", opacity: 0.9, textDecoration: "none", fontWeight: 600 }}>Learn more →</a>
                   </div>
                 </div>
               ))}

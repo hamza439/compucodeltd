@@ -96,17 +96,17 @@ export default function ComplianceSection() {
 
         .comp-section {
           background: #fff;
-          padding: 32px 16px 40px;
+          padding: 24px 16px 32px;
           font-family: 'DM Sans', sans-serif;
         }
-        .comp-inner { max-width: 1100px; margin: 0 auto; }
+        .comp-inner { max-width: 900px; margin: 0 auto; }
 
         /* Header */
-        .comp-header { text-align: center; margin-bottom: 40px; }
+        .comp-header { text-align: center; margin-bottom: 30px; }
         .comp-h2 {
           font-family: 'Sora', sans-serif;
           font-weight: 700;
-          font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+          font-size: clamp(1.1rem, 3vw, 1.5rem);
           color: #111;
           margin: 0;
         }
@@ -142,29 +142,32 @@ export default function ComplianceSection() {
         .comp-card-title {
           font-family: 'Sora', sans-serif;
           font-weight: 700;
-          font-size: clamp(0.7rem, 1.1vw, 0.95rem);
+          font-size: clamp(0.65rem, 1vw, 0.85rem);
           color: #111;
           text-align: center;
           line-height: 1.35;
-          margin: 0 0 14px;
-          min-height: 48px;
+          margin: 0 0 10px;
+          min-height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
         }
 
-        /* Image — full width, proportional */
+        /* Image — contained and smaller */
         .comp-img-wrap {
           width: 100%;
-          aspect-ratio: 4/3;
+          height: 120px;
           overflow: hidden;
           flex-shrink: 0;
-          margin-bottom: 14px;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .comp-img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
           display: block;
         }
 

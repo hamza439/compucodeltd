@@ -10,8 +10,8 @@ const NAV_LINKS = [
     dropdownType: "simple",
     dropdown: [
       { label: "Company Profile", to: "/about", desc: "Overview of Compucode" },
-      { label: "Who We Are", to: "/about#who-we-are", desc: "Our identity & values" },
-      { label: "Our Mission", to: "/about#our-mission", desc: "What drives us forward" },
+      // { label: "Who We Are", to: "/about#who-we-are", desc: "Our identity & values" },
+      // { label: "Our Mission", to: "/about#our-mission", desc: "What drives us forward" },
     ],
   },
   {
@@ -140,45 +140,41 @@ export default function Navbar() {
         .cc-links {
           display: flex;
           align-items: center;
-          gap: 2px;
+          justify-content: flex-end;
+          gap: 8px;
           margin-left: 28px;
+          margin-right: 24px;
           flex: 1;
         }
 
-        /* Regular nav link & Desktop button — Uniform boxed container style */
+        /* Regular nav link & Desktop button */
         .cc-link, .cc-nav-btn {
           display: inline-flex;
           align-items: center;
           gap: 6px;
-          padding: 10px 18px;
-          font-size: 14px;
-          font-weight: 600;
-          border-radius: 12px;
+          padding: 8px 16px;
+          font-size: 15px;
+          font-weight: 700;
+          border-radius: 4px;
           cursor: pointer;
           text-decoration: none;
-          background: rgba(255,255,255,0.9);
-          color: #E84A3B;
-          border: 1px solid rgba(117, 41, 33, 0.2);
-          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          background: transparent;
+          color: #555;
+          border: none !important;
+          outline: none !important;
+          box-shadow: none !important;
           transition: all 0.25s ease;
           white-space: nowrap;
         }
         .cc-link:hover, .cc-nav-btn:hover {
-          background: #fff;
-          color: #e53e2d !important;
-          transform: translateY(-2px);
-          box-shadow: 0 6px 16px rgba(229,62,45,0.15);
-          border-color: rgba(229,62,45,0.4);
+          color: #e53e2d;
         }
         .cc-link.active, .cc-nav-btn.active {
-          background: #fff;
-          color: #e53e2d !important;
-          border-color: rgba(229,62,45,0.6);
+          background: #e53e2d;
+          color: #fff !important;
         }
         .cc-link.open, .cc-nav-btn.open {
-          background: #fff;
-          color: #e53e2d !important;
-          border-color: rgba(229,62,45,0.6);
+          color: #e53e2d;
         }
         .cc-link.open .cc-chevron, .cc-nav-btn.open .cc-chevron {
           transform: rotate(180deg);
@@ -517,9 +513,9 @@ export default function Navbar() {
           </div>
 
           {/* Get in Touch CTA */}
-          <div className="cc-right">
+          {/* <div className="cc-right">
             <Link to="/contact" className="cc-cta">Get in Touch →</Link>
-          </div>
+          </div> */}
 
           {/* Hamburger */}
           <button

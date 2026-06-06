@@ -17,7 +17,7 @@ import ComprehensiveDataMigration from './pages/ComprehensiveDataMigration.jsx';
 import InfrastructureVirtualisation from './pages/InfrastructureVirtualisation.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import CookiePolicy from './pages/CookiePolicy.jsx';
-import eDiscoveryComplianceArchiving from './pages/eDiscoveryComplianceArchiving';
+import EDiscoveryComplianceArchiving from './pages/eDiscoveryComplianceArchiving';
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
         <Route path="/solutions/cloud-services" element={<CloudServices/>} />
         <Route path="/solutions/hybrid-migration" element={<ComprehensiveDataMigration/>} />
         <Route path="/solutions/infrastructure-virtualisation" element={<InfrastructureVirtualisation/>}/>
-        <Route path="/solutions/eDiscovery-Compliancearchiving" element={<eDiscoveryComplianceArchiving/>} />  
+        <Route path="/solutions/eDiscovery-Compliancearchiving" element={<EDiscoveryComplianceArchiving/>} />  
          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/cookie-policy" element={<CookiePolicy/>} />
 

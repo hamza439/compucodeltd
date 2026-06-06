@@ -8,10 +8,13 @@ import OurCommitment from '../components/OurCommitment'
 import Footer from '../components/Footer'
 import Whychooseus from '../components/Whychooseus'
 
+import HeroCards from '../components/HeroCards'
+
 function Home() {
   return (
     <>
       <HeroSection />
+      <HeroCards />
       {/* <Unlocking/> */}
       <Whychooseus/>
       <Datamaskingsection/>

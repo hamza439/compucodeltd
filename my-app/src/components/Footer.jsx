@@ -99,17 +99,17 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-14">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-4">
 
         {/* ── Animated accent divider ── */}
         <div
           ref={dividerRef}
-          className="footer-divider-anim h-px mb-10"
+          className="footer-divider-anim h-px mb-3"
           style={{ background: "linear-gradient(90deg, transparent, #e53e2d66, transparent)" }}
         />
 
         {/* ── Top Section ── */}
-        <div className="grid lg:grid-cols-12 gap-12 border-b border-gray-200 pb-12">
+        <div className="grid lg:grid-cols-12 gap-8 border-b border-gray-200 pb-4">
 
           {/* LEFT */}
           <div
@@ -118,7 +118,7 @@ const Footer = () => {
             data-anim="fu"
             data-delay="0s"
           >
-            <Link to="/" className="inline-block mb-5 group">
+            <Link to="/" className="inline-block mb-2 group">
               <img
                 src={LOGO_URL}
                 alt="Compucode Limited"
@@ -126,7 +126,7 @@ const Footer = () => {
               />
             </Link>
 
-            <p className="text-sm leading-7 text-gray-600 text-justify">
+            <p className="text-sm leading-snug text-gray-600 text-justify">
               Compucode offers a unified array of technology solutions to simplify IT,
               with a strong focus on integrating Generative AI. Our technology services
               oriented team delivers an integrated stack of cloud, IT applications,
@@ -138,7 +138,7 @@ const Footer = () => {
 
             <Link
               to="/about"
-              className="mt-5 text-[#E84A3B] text-sm font-medium w-fit relative group/link"
+              className="mt-2 text-[#E84A3B] text-sm font-medium w-fit relative group/link"
             >
               Learn More
               <span
@@ -153,11 +153,11 @@ const Footer = () => {
             {/* Email */}
             <div
               ref={addRef}
-              className="footer-anim flex items-start gap-4 py-5 border-b border-gray-100"
+              className="footer-anim flex items-start gap-4 py-2 border-b border-gray-100"
               data-anim="sl"
               data-delay="0.1s"
             >
-              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#E84A3B] transition-all duration-300 hover:border-[#E84A3B] hover:bg-[#E84A3B] hover:scale-110">
+              <div className="w-9 h-9 rounded-md border border-gray-200 flex items-center justify-center shrink-0 text-[#E84A3B] transition-all duration-300 hover:border-[#E84A3B] hover:bg-[#e53e2d0f] hover:scale-110">
                 <FiMail size={16} />
               </div>
               <div>
@@ -174,7 +174,7 @@ const Footer = () => {
             {/* Nigeria */}
             <div
               ref={addRef}
-              className="footer-anim flex items-start gap-4 py-5 border-b border-gray-100"
+              className="footer-anim flex items-start gap-4 py-2 border-b border-gray-100"
               data-anim="sl"
               data-delay="0.2s"
             >
@@ -183,7 +183,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Nigeria Office</p>
-                <p className="text-sm text-gray-600 leading-6">
+                <p className="text-sm text-gray-600 leading-snug">
                   29, Lekki County Estate Road,<br />Lekki, Lagos, Nigeria
                 </p>
               </div>
@@ -192,7 +192,7 @@ const Footer = () => {
             {/* UK */}
             <div
               ref={addRef}
-              className="footer-anim flex items-start gap-4 py-5"
+              className="footer-anim flex items-start gap-4 py-2"
               data-anim="sl"
               data-delay="0.3s"
             >
@@ -201,7 +201,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">United Kingdom Office</p>
-                <p className="text-sm text-gray-600 leading-6">
+                <p className="text-sm text-gray-600 leading-snug">
                   85, Great Portland Street, First Floor,<br />London, W1W 7LT, United Kingdom
                 </p>
               </div>
@@ -213,7 +213,7 @@ const Footer = () => {
         {/* ── Bottom Bar ── */}
         <div
           ref={addRef}
-          className="footer-anim flex flex-wrap items-center justify-between gap-4 py-6 border-b border-gray-200"
+          className="footer-anim flex flex-wrap items-center justify-between gap-4 py-2 border-b border-gray-200"
           data-anim="fu"
           data-delay="0.35s"
         >
@@ -264,7 +264,7 @@ const Footer = () => {
         {/* ── Copyright ── */}
         <p
           ref={addRef}
-          className="footer-anim text-sm text-gray-500 mt-5 mb-3"
+          className="footer-anim text-sm text-gray-500 mt-2 mb-1"
           data-anim="fi"
           data-delay="0.55s"
         >
@@ -274,7 +274,7 @@ const Footer = () => {
         {/* ── Legal ── */}
         <p
           ref={addRef}
-          className="footer-anim text-[11px] leading-6 text-gray-400 pb-2"
+          className="footer-anim text-[11px] leading-tight text-gray-400 pb-2"
           data-anim="fi"
           data-delay="0.65s"
         >

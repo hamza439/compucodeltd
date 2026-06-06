@@ -1,47 +1,5 @@
 import { useState, useEffect } from "react";
 
-const features = [
-  {
-    title: "AI Powered EDiscovery Solution",
-    icon: (
-      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-red-400 to-orange-400 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" className="w-8 h-8">
-          <rect x="4" y="6" width="16" height="12" rx="2" />
-          <circle cx="9" cy="12" r="1.2" fill="white" stroke="none" />
-          <circle cx="15" cy="12" r="1.2" fill="white" stroke="none" />
-          <path d="M9 15.5c1 .8 5 .8 6 0" strokeLinecap="round" />
-          <path d="M8 6V4M16 6V4" strokeLinecap="round" />
-          <path d="M2 10h2M20 10h2" strokeLinecap="round" />
-        </svg>
-      </div>
-    ),
-  },
-  {
-    title: "AI Powered Compliance Archiving And Content Preserve",
-    icon: (
-      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-red-500 to-rose-400 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" className="w-8 h-8">
-          <circle cx="12" cy="12" r="3" />
-          <circle cx="19" cy="9" r="2" />
-          <path d="M12 2v3M12 19v3M2 12h3M19 12h3" strokeLinecap="round" />
-          <path d="M5.6 5.6l2 2M16.4 16.4l2 2M5.6 18.4l2-2M16.4 7.6l2-2" strokeLinecap="round" />
-        </svg>
-      </div>
-    ),
-  },
-  {
-    title: "Enterprise Knowledge Base Built With AI",
-    icon: (
-      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" className="w-8 h-8">
-          <ellipse cx="12" cy="8" rx="7" ry="3" />
-          <path d="M5 8v4c0 1.66 3.13 3 7 3s7-1.34 7-3V8" />
-          <path d="M5 12v4c0 1.66 3.13 3 7 3s7-1.34 7-3v-4" />
-        </svg>
-      </div>
-    ),
-  },
-];
 
 export default function HeroWithCards() {
   const [active, setActive] = useState(1);
@@ -186,10 +144,10 @@ export default function HeroWithCards() {
             <p className="hero-label text-white text-[14px] tracking-[0.12em] uppercase mb-2 font-medium" style={{ fontFamily: "'Sora', sans-serif" }}>
               DATA INTELLIGENCE SOLUTIONS
             </p>
-            <h1 className="hero-h1" style={{ fontFamily: "'Sora', sans-serif", fontSize: "clamp(1.8rem,4vw,3.2rem)", fontWeight: 700, lineHeight: 1.1, color: "white", textTransform: "uppercase" }}>
-              Unified array of data solutions
+            <h1 className="hero-h1" style={{ fontFamily: "'Sora', sans-serif", fontSize: "28px", fontWeight: 500, lineHeight: "34px", color: "white" }}>
+              Unified Array Of Data Solutions
               <br />
-              powered by <span style={{ color: "#E84A3B" }}>Generative AI</span>
+              Powered By <span>Generative AI</span>
             </h1>
             <p className="hero-p text-white/80 text-[15px] leading-[1.5] mt-6 max-w-xl text-center">
               Harness next-generation AI to transform your organisation archives,
@@ -202,59 +160,6 @@ export default function HeroWithCards() {
             </div>
           </div>
         </section>
-
-        {/* ── CARDS ── */}
-        <div className="relative z-30 px-14 pb-12">
-          <div
-            className="flex flex-row justify-center gap-5 items-stretch max-w-5xl mx-auto -mt-24
-            max-sm:flex-col max-sm:max-w-sm max-sm:mx-auto max-sm:-mt-24 max-sm:gap-3"
-          >
-            {features.map((feature, index) => {
-              const isActive = active === index;
-              return (
-                <div
-                  key={index}
-                  onClick={() => setActive(index)}
-                  style={{
-                    flex: "1 1 0",
-                    minWidth: 0,
-                    "--delay": `${0.75 + index * 0.12}s`,
-                  }}
-                  className={`card-item card-hover bg-white flex flex-col cursor-pointer
-                    ${isActive
-                      ? "border-[2.5px] border-[#E84A3B] -translate-y-1.5 z-10 card-active"
-                      : "border border-gray-200"
-                    }`}
-                >
-                  {/* Icon area */}
-                  <div className="flex-1 flex items-center justify-center px-6 py-10">
-                    <div className="icon-wrap">
-                      {feature.icon}
-                    </div>
-                  </div>
-
-                  {/* Red footer */}
-                  <div className="w-full bg-[#E84A3B] px-5 pt-5 pb-4 flex-shrink-0">
-                    <h3
-                      className="text-[14px] font-bold text-white leading-snug text-center"
-                      style={{ minHeight: "3.2em", display: "flex", alignItems: "center", justifyContent: "center" }}
-                    >
-                      {feature.title}
-                    </h3>
-                    <div className="flex justify-end mt-2.5">
-                      <svg
-                        className={`w-[17px] h-[17px] text-white/75 ${isActive ? "arrow-icon" : ""}`}
-                        fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
 
       </div>
     </>
