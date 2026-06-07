@@ -98,7 +98,7 @@ export default function AboutSection() {
                   ${sectionVisible ? `${shown} translate-y-0` : `${hidden} translate-y-4`}`}
                 style={{ fontFamily: "'Sora', sans-serif", fontWeight: 600 }}
               >
-                Your Partner For<br />the Long Haul
+                Your Partner for<br />the Long Haul
               </h2>
 
               {/* Paragraph */}

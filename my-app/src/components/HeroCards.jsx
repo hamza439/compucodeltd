@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 
 const features = [
   {
-    title: "AI Powered EDiscovery Solution",
+    title: "AI Powered eDiscovery Solution",
     image: "/icon_ediscovery.png",
   },
   {
-    title: "AI Powered Compliance Archiving And Content Preserve",
+    title: "AI Powered Compliance Archiving and Content Preserve",
     image: "/icon_compliance.png",
   },
   {
-    title: "Enterprise Knowledge Base Built With AI",
+    title: "Enterprise Knowledge Base Built with AI",
     image: "/icon_database.png",
   },
 ];

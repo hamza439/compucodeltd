@@ -72,7 +72,7 @@ export default function AwardsSection() {
               className="text-gray-900 mb-3"
               style={{ fontFamily: "'Sora', sans-serif", fontWeight: 700, fontSize: "clamp(1.4rem, 4vw, 2.2rem)" }}
             >
-              Our clients
+              Our Clients
             </h2>
             <p
               className="text-gray-500 mx-auto"
