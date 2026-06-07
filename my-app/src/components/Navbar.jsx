@@ -580,13 +580,13 @@ export default function Navbar() {
           )}
 
           {/* Get in Touch — mobile */}
-          <Link
+          {/* <Link
             to="/contact"
             className="cc-mobile-cta"
             onClick={() => setMobileOpen(false)}
           >
             Get in Touch →
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </>

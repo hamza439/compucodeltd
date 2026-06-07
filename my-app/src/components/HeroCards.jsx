@@ -87,11 +87,10 @@ export default function HeroCards() {
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 style={{
-                  flex: "1 1 0",
                   minWidth: 0,
                   "--delay": `${0.75 + index * 0.12}s`,
                 }}
-                className={`hero-card-item hero-card-hover bg-white rounded-2xl flex flex-col cursor-pointer border-2 overflow-hidden
+                className={`w-full md:flex-1 hero-card-item hero-card-hover bg-white rounded-2xl flex flex-col cursor-pointer border-2 overflow-hidden
                   ${isActive ? "hero-card-active border-[#E84A3B]" : "border-gray-100"}`}
               >
                 <div className="w-full h-44 relative overflow-hidden bg-gray-100 border-b border-gray-100">
