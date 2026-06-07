@@ -145,7 +145,7 @@ export default function HeroWithCards() {
               DATA INTELLIGENCE SOLUTIONS
             </p>
             <h1 className="hero-h1" style={{ fontFamily: "'Sora', sans-serif", fontSize: "28px", fontWeight: 500, lineHeight: "34px", color: "white" }}>
-              Unified Array of Data Solutions
+              Unified array of Data Solutions
               <br />
               Powered by <span>Generative AI</span>
             </h1>
